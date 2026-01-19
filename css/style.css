@@ -3781,6 +3781,12 @@ section.Aarogya_new_faq_main_section {
   .owl-carousel.specialities-carousel {
     padding: 0 10px;
   }
+
+  .doctors-carousel .owl-nav {
+    display: none;
+  }
+
+
 }
 
 
