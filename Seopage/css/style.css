@@ -214,6 +214,13 @@
     list-style: disc;
   }
 
+  .why_patients_conent h4 {
+    font-family: "Poppins-Semibold";
+    font-size: 18px;
+    font-weight: 500;
+    color: #0B1C34;
+    margin-bottom: 10px;
+  }
 
   .overview_conent_div {
     justify-content: center;
@@ -682,7 +689,7 @@
     margin-bottom: 10px;
     text-align: left;
     padding: 0;
-    height: 150px;
+    max-height: 150px;
     overflow-y: auto;
     margin-right: 10px;
   }
@@ -1225,6 +1232,17 @@
     margin: 5px 0;
     text-align: left;
     color: #fff;
+  }
+
+  .hover_overlay_conent li {
+    font-family: "Poppins-regular";
+    font-size: 14px;
+    line-height: 22px;
+    margin: 5px 0;
+    text-align: left;
+    color: #fff;
+    list-style: disc;
+    margin-bottom: 10px;
   }
 
   .over_lay_div .owl-nav.disabled {
