@@ -1080,6 +1080,7 @@
     justify-content: space-between;
     border-radius: 10px;
     border: 1px solid #00000042;
+    margin-bottom: 10px;
   }
 
   .overlay-container .top_number p {
@@ -1858,3 +1859,4 @@
   }
 
   @media screen and (max-width:320px) {}
+
