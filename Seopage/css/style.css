@@ -1080,7 +1080,6 @@
     justify-content: space-between;
     border-radius: 10px;
     border: 1px solid #00000042;
-    margin-bottom: 10px;
   }
 
   .overlay-container .top_number p {
@@ -1199,6 +1198,7 @@
     width: 90%;
     margin: auto;
     text-align: left;
+    top: 0;
   }
 
   .hover_overlay_conent h5 {
@@ -1382,12 +1382,11 @@
     }
   }
 
-  slideInUp animation {
+  .slideInUp .animation {
     transform: translateY(0px);
     opacity: 1;
   }
 
-  element.style {}
 
   .journey-steps .step-card:nth-child(1) {
     animation-delay: 0.1s;
@@ -1543,6 +1542,18 @@
     background: #00a693;
   }
 
+  .over_lay_div .owl-dots {
+    margin-top: 40px;
+  }
+
+  .over_lay_div .owl-dots button.active span {
+    background: #00969C !important;
+  }
+
+  .over_lay_div.owl-theme .owl-dots button span {
+    width: 13px;
+    height: 13px;
+  }
 
   @media screen and (max-width:1300px) {
 
@@ -1859,4 +1870,3 @@
   }
 
   @media screen and (max-width:320px) {}
-
