@@ -3178,6 +3178,12 @@ section.Aarogya_new_faq_main_section {
   color: #ffd700
 }
 
+.doc_gif img {
+    position: fixed;
+    right: 0rem;
+    width: 40px;
+    bottom: 4rem;
+}
 /* footer */
 
 /* mobile Responsive */
@@ -3936,3 +3942,4 @@ section.Aarogya_new_faq_main_section {
     flex-wrap: wrap;
   }
 }
+
