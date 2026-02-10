@@ -3180,8 +3180,8 @@ section.Aarogya_new_faq_main_section {
 
 .doc_gif img {
     position: fixed;
-    right: 0rem;
-    width: 40px;
+    right: 2rem;
+    width: 60px;
     bottom: 4rem;
 }
 /* footer */
@@ -3443,6 +3443,12 @@ section.Aarogya_new_faq_main_section {
 
 
 @media (max-width:768px) {
+  .doc_gif img {
+    position: fixed;
+    right: 2rem;
+    width: 40px;
+    bottom: 4rem;
+}
   .scroll-to-top-btn {
     left: 20px;
     bottom: 20px;
@@ -3942,4 +3948,5 @@ section.Aarogya_new_faq_main_section {
     flex-wrap: wrap;
   }
 }
+
 
