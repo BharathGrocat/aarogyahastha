@@ -3447,7 +3447,7 @@ section.Aarogya_new_faq_main_section {
   .doc_gif img {
         position: fixed;
         right: 2rem;
-        width: 50px;
+        width: 60px;
         bottom: 4.3rem;
     }
   .scroll-to-top-btn {
@@ -3949,6 +3949,7 @@ section.Aarogya_new_faq_main_section {
     flex-wrap: wrap;
   }
 }
+
 
 
 
