@@ -7,29 +7,33 @@ body {
   padding: 0;
 }
 
-h1,
-h2 {
+h1 {
   font-size: 40px;
   font-family: "Montserrat", sans-serif;
 }
 
-h3 {
-  font-size: 35px;
-  font-family: "Montserrat", sans-serif;
-}
-
-h4 {
+h2 {
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
 }
 
+h3 {
+  font-size: 26px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h4 {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+
 h5 {
-  font-size: 28px;
+  font-size: 20px;
   font-family: "Montserrat", sans-serif;
 }
 
 h6 {
-  font-size: 25px;
+  font-size: 18px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -175,9 +179,9 @@ h2.sub-heading {
 
 .why_patients_conent h4 {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   color: #0B1C34;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 .overview_conent_div {
@@ -196,6 +200,12 @@ h2.sub-heading {
   line-height: 28px;
   color: #000;
   margin-bottom: 15px;
+}
+
+.overview_conent_div h3,
+.overview_conent_div h4,
+.overview_conent_div h5 {
+  font-weight: 600;
 }
 
 section.overview_section {
@@ -747,7 +757,7 @@ section.latest_blog_section.Realated {
 .testimonial-section {
   text-align: center;
   padding: 60px 20px;
-  background: #fff;
+  background: #F8F9FA;
 }
 
 .testimonial-section h2 {
@@ -1568,6 +1578,43 @@ td {
   border-collapse: collapse;
 }
 
+.neighboring_sec p {
+  text-align: center;
+}
+
+.neighboring_sec .neighboring_main {
+  display: flex;
+  gap: 10px;
+  margin: 30px 0;
+  justify-content: center;
+}
+
+.neighboring_sec .neighboring_main .item a {
+  background: #00969C;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s ease;
+  width: 100%;
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  justify-content: center;
+}
+
+section.neighboring_sec {
+  padding: 50px 0;
+}
+
+.neighboring_sec .neighboring_main .item a:hover {
+  border: 1px solid #1A6DB3;
+  background: #fff;
+  color: #1A6DB3;
+  border-radius: 3px;
+}
+
 /* responsive */
 @media screen and (max-width:1300px) {
 
@@ -1672,6 +1719,13 @@ td {
     object-fit: cover;
   }
 
+  .neighboring_sec .neighboring_main {
+    flex-wrap: wrap;
+  }
+
+  .neighboring_sec .neighboring_main .item {
+    width: 30%;
+  }
 }
 
 @media screen and (max-width:800px) {
@@ -1680,10 +1734,6 @@ td {
     width: 100%;
     text-align: center;
   }
-
-
-
-
 
   .seo-banner_video_main h1 {
     font-size: 30px;
@@ -1704,7 +1754,9 @@ td {
     transform: scale(1.0) translateY(-15px);
   }
 
-
+  .neighboring_sec .neighboring_main .item {
+    width: 48%;
+  }
 }
 
 @media screen and (max-width:600px) {
@@ -1853,6 +1905,9 @@ td {
     display: block;
   }
 
+  .neighboring_sec .neighboring_main .item a {
+    font-size: 14px;
+  }
 
 }
 
