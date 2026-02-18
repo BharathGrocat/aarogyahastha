@@ -186,6 +186,11 @@ h2.sub-heading {
   flex-direction: column;
 }
 
+.overview_conent_div li {
+  list-style: disc;
+  margin-bottom: 10px;
+}
+
 .overview_conent_div p {
   font-size: 15px;
   line-height: 28px;
@@ -352,8 +357,8 @@ section.our_approach_section {
 }
 
 .faq-main .sub-heading {
-  font-size: 35px;
-  font-weight: 500;
+  font-size: 30px;
+  font-weight: 600;
   color: #0B1C34;
   margin-bottom: 20px;
   text-align: left;
@@ -1240,6 +1245,10 @@ section.over_new_section {
   text-align: center;
 }
 
+.over_new_section .hover_overlay_conent p {
+  text-align: left;
+}
+
 p.new_p {
   font-size: 16px;
   line-height: 30px;
@@ -1531,6 +1540,32 @@ section.step_by_step_section p {
 
 .owl-carousel.owl-theme .owl-stage-outer {
   margin: 0 10px;
+}
+
+.specialities_sec p {
+  text-align: center;
+}
+
+.specialities_sec table {
+  margin: 40px 0;
+}
+
+.specialities_sec table th {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #0B1C34;
+}
+
+.specialities_sec table tr td:first-child {
+  font-weight: 600;
+  color: #0B1C34;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
 /* responsive */
