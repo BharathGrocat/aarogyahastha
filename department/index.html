@@ -1237,6 +1237,52 @@
       color: #000;
     }
 
+    .breadcrumb {
+      margin-bottom: 0;
+      padding: 0;
+      background: transparent;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .breadcrumb li {
+      list-style: none;
+    }
+
+    .breadcrumb-item a {
+      color: #019598;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .breadcrumb-item+.breadcrumb-item::before {
+      content: "›";
+      color: #fff;
+    }
+
+    .other_department .item {
+      background: #EEF4FB;
+      border-radius: 20px;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    section.other_departmentsec {
+      padding: 50px 0;
+    }
+
+    .other_department .item img {
+      width: 100px;
+      margin: 0px auto 30px;
+    }
+
+    .other_department .item a {
+      text-decoration: none;
+      color: #12395F;
+      font-weight: 500;
+    }
+
     @media (max-width: 992px) {
       .leftright_sec .leftright_inner {
         flex-wrap: wrap;
@@ -1330,9 +1376,36 @@
   <section class="hero">
     <div class="hero-inner">
       <div>
-        <div class="hero-badge"><i class="fa-solid fa-bone"></i> Orthopedic Surgeon in Bangalore</div>
+        <nav class="hero-badge" aria-label="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <ol class="breadcrumb">
+
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="/">
+                <span itemprop="name">Home</span>
+              </a>
+              <meta itemprop="position" content="1" />
+            </li>
+
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="/departments">
+                <span itemprop="name">Departments</span>
+              </a>
+              <meta itemprop="position" content="2" />
+            </li>
+
+            <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+              itemtype="https://schema.org/ListItem">
+
+              <span itemprop="name">Orthopedic Surgeon</span>
+              <meta itemprop="position" content="3" />
+
+            </li>
+
+          </ol>
+        </nav>
         <h1>Orthopedic Surgeon in Bangalore <span>Expert Care</span> at Aarogya Hastha</h1>
-        <p>Compassionate, patient-centric orthopedic and Trauma Care (Hand surgery) treatments tailored for every stage
+        <p>Compassionate, patient-centric orthopedic and Trauma Care (Hand surgery) treatments tailored for every
+          stage
           of life.</p>
         <div class="hero-actions">
           <a href="#" class="btn-primary"><i class="fa-regular fa-calendar-days"></i> Book Appointment</a>
@@ -1609,6 +1682,87 @@
     </div>
   </section>
 
+  <!-- ══════════ SPECIALISTS ══════════ -->
+  <section id="specialists">
+    <div class="container">
+      <div class="section-header">
+        <h2>Meet Our Expert Orthopaedic Team</h2>
+        <p>Fellowship-trained surgeons with decades of combined experience in orthopaedic care across Bangalore.
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="specialists-grid ">
+
+        <div class="doctor-card">
+          <div class="doctor-photo"><img src="https://aarogyahastha.com/static/img/doctors/Dr._Kushal_1_1.jpeg/" alt="">
+          </div>
+          <div class="doctor-info">
+            <h4>Dr. Karan Sharma</h4>
+            <div class="doctor-spec">MBBS , MS-Orthopaedics</div>
+            <div class="doctor-exp">18+ Years Experience</div>
+            <a href="https://app.fyndbetter.com/ahh_apt?apttype=inclinic&location=1738807857750x551145951547508800&utm_source=&utm_campaign=&utm_id=&utm_content=&gclid=&doctorid=b0581515-53d5-4a71-83ed-b1f5145ef8b5&source=&name=&phone="
+              class="btn-appt">Book Appointment</a>
+          </div>
+        </div>
+
+        <div class="doctor-card">
+          <div class="doctor-photo"><img src="https://aarogyahastha.com/static/img/doctors/dr-he.jpg/" alt=""></div>
+          <div class="doctor-info">
+            <h4>Dr. Deepak A</h4>
+            <div class="doctor-spec">MBBS, DNB (Ortho), DNB training from Ganga Hospital</div>
+            <div class="doctor-exp">14+ Years Experience</div>
+            <a href="https://app.fyndbetter.com/ahh_apt?id=d25f0537-f6e1-4e6f-bc40-44720f93c8a5&location=1738807875965x688940213774502700"
+              class="btn-appt">Book Appointment</a>
+          </div>
+        </div>
+
+        <div class="doctor-card">
+          <div class="doctor-photo"><img src="https://aarogyahastha.com/static/img/doctors/karan-gowda.jpg" alt="">
+          </div>
+          <div class="doctor-info">
+            <h4>Dr. C L Karan Gowda</h4>
+            <div class="doctor-spec"> MBBS, MS - Orthopaedics</div>
+            <div class="doctor-exp">7+ Years Experience</div>
+            <a href="https://app.fyndbetter.com/ahh_apt?id=c5ed923d-90cc-46b6-b7e6-559cfad67f28&location=1738807857750x551145951547508800"
+              class="btn-appt">Book Appointment</a>
+          </div>
+        </div>
+
+        <div class="doctor-card">
+          <div class="doctor-photo"><img src="https://aarogyahastha.com/static/img/doctors/dr-he.jpg/" alt=""></div>
+          <div class="doctor-info">
+            <h4>Dr. Radhesh Menon</h4>
+            <div class="doctor-spec">MBBS, MS Orthopedics (Gold Medal)</div>
+            <div class="doctor-exp">10+ Years Experience</div>
+            <a href="#" class="btn-appt">Book Appointment</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="concern-cta-actions" style="text-align:center; justify-content: center;">
+        <a href="https://aarogyahastha.com/doctors/" class="btn-primary " style="font-size:0.95rem;">View All
+          Specialists →</a>
+      </div>
+      <!-- CTA 3: Urgency nudge — user has seen the doctors, push to book -->
+      <!-- <div class="urgency-nudge">
+        <div class="urgency-nudge-left">
+          <div class="urgency-icon">🗓️</div>
+          <div>
+            <strong>Today's appointment slots are filling up fast</strong>
+            <span>Our specialists have limited availability — secure yours before it's gone.</span>
+          </div>
+        </div>
+        <div class="concern-cta-actions" style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+          <a href="https://aarogyahastha.com/appointments" class="btn-cta-gold">Book My Slot Now</a>
+        </div>
+      </div> -->
+
+    </div>
+  </section>
+
+
   <!-- ══════════ CALLBACK FORM CTA ══════════ -->
   <div class="callback-strip" id="callback">
     <div class="callback-inner">
@@ -1778,86 +1932,6 @@
     </div>
   </section>
 
-  <!-- ══════════ SPECIALISTS ══════════ -->
-  <section id="specialists">
-    <div class="container">
-      <div class="section-header">
-        <h2>Meet Our Expert Orthopaedic Team</h2>
-        <p>Fellowship-trained surgeons with decades of combined experience in orthopaedic care across Bangalore.
-        </p>
-        <div class="divider"></div>
-      </div>
-
-      <div class="specialists-grid ">
-
-        <div class="doctor-card">
-          <div class="doctor-photo"><img src="https://aarogyahastha.com/static/img/doctors/Dr._Kushal_1_1.jpeg/" alt="">
-          </div>
-          <div class="doctor-info">
-            <h4>Dr. Karan Sharma</h4>
-            <div class="doctor-spec">MBBS , MS-Orthopaedics</div>
-            <div class="doctor-exp">18+ Years Experience</div>
-            <a href="https://app.fyndbetter.com/ahh_apt?apttype=inclinic&location=1738807857750x551145951547508800&utm_source=&utm_campaign=&utm_id=&utm_content=&gclid=&doctorid=b0581515-53d5-4a71-83ed-b1f5145ef8b5&source=&name=&phone="
-              class="btn-appt">Book Appointment</a>
-          </div>
-        </div>
-
-        <div class="doctor-card">
-          <div class="doctor-photo"><img src="https://aarogyahastha.com/static/img/doctors/dr-he.jpg/" alt=""></div>
-          <div class="doctor-info">
-            <h4>Dr. Deepak A</h4>
-            <div class="doctor-spec">MBBS, DNB (Ortho), DNB training from Ganga Hospital</div>
-            <div class="doctor-exp">14+ Years Experience</div>
-            <a href="https://app.fyndbetter.com/ahh_apt?id=d25f0537-f6e1-4e6f-bc40-44720f93c8a5&location=1738807875965x688940213774502700"
-              class="btn-appt">Book Appointment</a>
-          </div>
-        </div>
-
-        <div class="doctor-card">
-          <div class="doctor-photo"><img src="https://aarogyahastha.com/static/img/doctors/karan-gowda.jpg" alt="">
-          </div>
-          <div class="doctor-info">
-            <h4>Dr. C L Karan Gowda</h4>
-            <div class="doctor-spec"> MBBS, MS - Orthopaedics</div>
-            <div class="doctor-exp">7+ Years Experience</div>
-            <a href="https://app.fyndbetter.com/ahh_apt?id=c5ed923d-90cc-46b6-b7e6-559cfad67f28&location=1738807857750x551145951547508800"
-              class="btn-appt">Book Appointment</a>
-          </div>
-        </div>
-
-        <div class="doctor-card">
-          <div class="doctor-photo"><img src="https://aarogyahastha.com/static/img/doctors/dr-he.jpg/" alt=""></div>
-          <div class="doctor-info">
-            <h4>Dr. Radhesh Menon</h4>
-            <div class="doctor-spec">MBBS, MS Orthopedics (Gold Medal)</div>
-            <div class="doctor-exp">10+ Years Experience</div>
-            <a href="#" class="btn-appt">Book Appointment</a>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="concern-cta-actions" style="text-align:center; justify-content: center;">
-        <a href="https://aarogyahastha.com/departments/" class="btn-primary " style="font-size:0.95rem;">View All
-          Specialists →</a>
-      </div>
-      <!-- CTA 3: Urgency nudge — user has seen the doctors, push to book -->
-      <!-- <div class="urgency-nudge">
-        <div class="urgency-nudge-left">
-          <div class="urgency-icon">🗓️</div>
-          <div>
-            <strong>Today's appointment slots are filling up fast</strong>
-            <span>Our specialists have limited availability — secure yours before it's gone.</span>
-          </div>
-        </div>
-        <div class="concern-cta-actions" style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
-          <a href="https://aarogyahastha.com/appointments" class="btn-cta-gold">Book My Slot Now</a>
-        </div>
-      </div> -->
-
-    </div>
-  </section>
-
   <!-- ══════════ BLOG ══════════ -->
   <section id="blog">
     <div class="container">
@@ -1900,7 +1974,8 @@
         </div>
 
         <div class="blog-card">
-          <div class="blog-img" style="background: linear-gradient(135deg, #f5e0d4, #f0b8a0);"><img src="https://aarogyahastha.com/static/img/blogs/pregnancy.jpeg/" alt=""></div>
+          <div class="blog-img" style="background: linear-gradient(135deg, #f5e0d4, #f0b8a0);"><img
+              src="https://aarogyahastha.com/static/img/blogs/pregnancy.jpeg/" alt=""></div>
           <div class="blog-body">
             <h3>Prenatal Care: Your Path to a Healthy Pregnancy</h3>
             <p>A warm welcome to all expecting mothers! Pregnancy is a beautiful journey, but it also comes with
@@ -1937,7 +2012,63 @@
       </div>
     </div>
   </section>
+  <!-- ══════════ Other Department ══════════ -->
+
+  <section class="other_departmentsec">
+    <div class="container">
+      <div class="section-header">
+        <h2>Explore Our Other Departments</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="other_department owl-carousel owl-theme">
+        <div class="item">
+          <a href="/departments/ent" class="item_innr" data-department="ent">
+            <img class="dept-icon" loading="lazy" src="https://aarogyahastha.com/static/img/department/icons/ent.svg"
+              alt="Ear, Nose, and Throat (ENT)">
+            <h4 class="text-dark-blue mt-3">Ear, Nose, and Throat (ENT)</h4>
+          </a>
+        </div>
+        <!--  -->
+        <div class="item">
+          <a href="/departments/nephrology" class="item_innr" data-department="nephrology">
+            <img class="dept-icon" loading="lazy"
+              src="https://aarogyahastha.com/static/img/department/icons/nephrology.svg" alt="Nephrology">
+            <h4>Nephrology</h4>
+          </a>
+        </div>
+        <!--  -->
+        <div class="item">
+          <a href="/departments/minimal-access-surgery" class="item_innr" data-department="minimal-access-surgery">
+            <img class="dept-icon" loading="lazy"
+              src="https://aarogyahastha.com/static/img/department/icons/minimal-access-surgery.svg"
+              alt="Minimal Access Surgery">
+            <h4>Minimal Access Surgery</h4>
+          </a>
+        </div>
+        <!--  -->
+        <div class="item">
+          <a href="/departments/neurology" class="item_innr" data-department="neurology">
+            <img class="dept-icon" loading="lazy" src="https://aarogyahastha.com/static/img/department/icons/Untitled_design_2.png"
+              alt="Neurology">
+            <h4>Neurology</h4>
+          </a>
+        </div>
+        <!--  -->
+        <div class="item">
+          <a href="/departments/emergency-medicine" class="item_innr" data-department="emergency-medicine">
+            <img class="dept-icon" loading="lazy"
+              src="https://aarogyahastha.com/static/img/department/icons/emergency-medicine.svg"
+              alt="Emergency Medicine">
+            <h4>Emergency Medicine</h4>
+          </a>
+        </div>
+        <!--  -->
+
+      </div>
+    </div>
+  </section>
   <!-- ══════════ FAQ ══════════ -->
+
   <section id="faq">
     <div class="container">
       <div class="section-header">
@@ -2129,7 +2260,24 @@
         items: 1,
         margin: 10,
         loop: true,
-        nav: false
+        nav: false,
+      });
+    });
+
+    $(function () {
+      // Owl Carousel
+      var owl = $(".other_department");
+      owl.owlCarousel({
+        items: 3,
+        margin: 10,
+        loop: true,
+        nav: false,
+        responsive: {
+          0: { items: 1 },
+          600: { items: 2 },
+          1000: { items: 3 },
+          1300: { items: 4 }
+        }
       });
     });
 
