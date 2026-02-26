@@ -45,7 +45,25 @@
       font-family: "Montserrat", sans-serif;
     }
 
+    .header-top-container {
+      padding-bottom: 0;
+    }
+
+    .main-nav li a {
+      margin: 8px 0;
+    }
+
     /* ── Hero ── */
+    .new-header .nav-container {
+      transition: transform 0.35s ease, opacity 0.35s ease;
+    }
+
+    .hide {
+      transform: translateY(-100%);
+      opacity: 0;
+      pointer-events: none;
+    }
+
     .hero {
       background: linear-gradient(135deg, #0d1f3c 0%, #1a4d8f 55%, #1a6aaf 100%);
       padding: 80px 0 60px;
@@ -102,7 +120,7 @@
 
     .hero h1 {
       font-family: "Montserrat", sans-serif;
-      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      font-size: clamp(2rem, 4vw, 3.2rem);
       color: #ffffff;
       line-height: 1.2;
       margin-bottom: 18px;
@@ -205,11 +223,12 @@
     .new-header {
       box-shadow: unset;
     }
+
     /* ── Sticky Nav ── */
     .section-nav {
       position: sticky;
-      top: 150px;
-      z-index: 100;
+      top: 105px;
+      z-index: 9999;
       background: #ffffff;
       border-bottom: 2px solid #d8e4f0;
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
@@ -754,7 +773,7 @@
 
     .faq-q {
       padding: 20px 24px;
-      font-weight: 600;
+      font-weight: 700;
       color: #0d1f3c;
       cursor: pointer;
       display: flex;
@@ -867,7 +886,7 @@
 
     .concern-cta-text strong {
       display: block;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       color: #fff;
       margin-bottom: 4px;
       font-weight: 600;
@@ -875,7 +894,7 @@
 
     .concern-cta-text span {
       color: #fff;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
 
     .concern-cta-actions {
@@ -1321,6 +1340,11 @@
     }
 
     @media (max-width: 992px) {
+
+      .section-nav {
+        top: 122px;
+      }
+
       .leftright_sec .leftright_inner {
         flex-wrap: wrap;
       }
@@ -1332,24 +1356,7 @@
       .leftright_inner.column_direction {
         flex-direction: column-reverse;
       }
-    }
 
-    @media (max-width: 768px) {
-      .callback-inner {
-        grid-template-columns: 1fr;
-      }
-
-      .form-row {
-        grid-template-columns: 1fr;
-      }
-
-      .callback-text h3 {
-        font-size: 1.4rem;
-      }
-    }
-
-    /* ── Responsive ── */
-    @media (max-width: 900px) {
       .hero-inner {
         grid-template-columns: 1fr;
       }
@@ -1381,6 +1388,20 @@
       }
     }
 
+    @media (max-width: 768px) {
+      .callback-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .callback-text h3 {
+        font-size: 1.4rem;
+      }
+    }
+
     @media (max-width: 600px) {
 
       .services-grid,
@@ -1402,6 +1423,58 @@
         justify-content: center;
       }
 
+      .concern-cta-actions a {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .breadcrumb li a,
+      .breadcrumb li span {
+        font-size: 10px;
+      }
+
+      .breadcrumb {
+        gap: 0;
+      }
+
+      .breadcrumb-item+.breadcrumb-item::before {
+        padding: 0 3px;
+      }
+
+      .breadcrumb-item+.breadcrumb-item {
+        padding-left: 3px;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .why-item {
+        flex-wrap: wrap;
+      }
+
+      .leftright_sec .leftright_inner h2 {
+        font-size: 1.3em;
+      }
+
+      .cta-strip h2 {
+        font-size: 1.5rem;
+      }
+
+      .testimonial-inner blockquote {
+        font-size: 0.8rem;
+      }
+
+      .faq-q {
+        font-size: 15px;
+        line-height: 24px;
+      }
+    }
+
+    @media (max-width: 578px) {
+      .section-nav {
+        top: 115px;
+      }
     }
   </style>
 
@@ -2620,6 +2693,28 @@
 
 
 
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const navContainer = document.querySelector(".new-header .nav-container");
+      const hero = document.querySelector(".hero");
+
+      window.addEventListener("scroll", function () {
+
+        const heroRect = hero.getBoundingClientRect();
+
+        // When hero completely leaves viewport
+        if (heroRect.bottom <= 0) {
+          navContainer.classList.add("hide");
+        } else {
+          navContainer.classList.remove("hide");
+        }
+
+      });
+
+    });
   </script>
 
   <script src="../js/bootstrap.bundle.min.js"></script>
