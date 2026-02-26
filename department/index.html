@@ -54,15 +54,6 @@
     }
 
     /* ── Hero ── */
-    .new-header .nav-container {
-      transition: transform 0.35s ease, opacity 0.35s ease;
-    }
-
-    .hide {
-      transform: translateY(-100%);
-      opacity: 0;
-      pointer-events: none;
-    }
 
     .hero {
       background: linear-gradient(135deg, #0d1f3c 0%, #1a4d8f 55%, #1a6aaf 100%);
@@ -1287,7 +1278,7 @@
       padding: 0;
       background: transparent;
       display: flex;
-      gap: 0px;
+      gap: 10px;
       align-items: center;
     }
 
@@ -2562,7 +2553,7 @@
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <p>Copyright © 2025, all Rights Reserved to Aarogya Hastha Hospitals Pvt Ltd | <a
+        <p>Copyright © 2026, all Rights Reserved to Aarogya Hastha Hospitals Pvt Ltd | <a
             href="/terms-and-conditions">Terms & Conditions</a> | <a href="/privacy-policy">Privacy
             Policy</a> | <a href="/disclaimer">Disclaimer</a></p>
       </div>
@@ -2694,28 +2685,6 @@
 
 
 
-  </script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-
-      const navContainer = document.querySelector(".new-header .nav-container");
-      const hero = document.querySelector(".hero");
-
-      window.addEventListener("scroll", function () {
-
-        const heroRect = hero.getBoundingClientRect();
-
-        // When hero completely leaves viewport
-        if (heroRect.bottom <= 0) {
-          navContainer.classList.add("hide");
-        } else {
-          navContainer.classList.remove("hide");
-        }
-
-      });
-
-    });
   </script>
 
   <script src="../js/bootstrap.bundle.min.js"></script>
