@@ -16,6 +16,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="../css/style.css">
 
   <style>
     * {
@@ -127,7 +132,7 @@
       padding: 13px 28px;
       border-radius: 8px;
       font-weight: 600;
-      font-size: 0.95rem;
+      font-size: 0.75rem;
       text-decoration: none;
       cursor: pointer;
       transition: all 0.2s;
@@ -197,10 +202,13 @@
       font-size: 0.82rem;
     }
 
+    .new-header {
+      box-shadow: unset;
+    }
     /* ── Sticky Nav ── */
     .section-nav {
       position: sticky;
-      top: 0;
+      top: 150px;
       z-index: 100;
       background: #ffffff;
       border-bottom: 2px solid #d8e4f0;
@@ -222,7 +230,7 @@
     }
 
     .nav-tab {
-      padding: 18px 28px;
+      padding: 10px 28px;
       font-weight: 500;
       font-size: 0.92rem;
       color: #7a8a9a;
@@ -267,9 +275,10 @@
 
     .section-header h2 {
       font-family: "Montserrat", sans-serif;
-      font-size: clamp(1.7rem, 3vw, 2.4rem);
+      font-size: clamp(1.5rem, 2.6vw, 2.2rem);
       color: #0d1f3c;
       margin-bottom: 14px;
+      text-align: center;
     }
 
     .section-header p {
@@ -413,6 +422,7 @@
     .approach-card p {
       font-size: 0.83rem;
       color: #7a8a9a;
+      margin-bottom: 0;
     }
 
     /* ── Services ── */
@@ -588,7 +598,7 @@
       color: white;
       padding: 9px 20px;
       border-radius: 8px;
-      font-size: 0.82rem;
+      font-size: 0.72rem;
       font-weight: 500;
       text-decoration: none;
       display: inline-block;
@@ -710,7 +720,7 @@
 
     .testimonial-inner blockquote {
       font-family: "Montserrat", sans-serif;
-      font-size: 1.2rem;
+      font-size: 1.0rem;
       color: rgba(255, 255, 255, 0.9);
       font-style: italic;
       line-height: 1.6;
@@ -793,11 +803,18 @@
       font-size: 2rem;
       color: #fff;
       margin-bottom: 14px;
+      text-align: center;
     }
 
     .cta-strip p {
       color: #fff;
-      margin-bottom: 28px;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+    }
+
+
+    .cta-actions a {
+      font-size: 15px;
     }
 
     .cta-actions {
@@ -871,7 +888,7 @@
       padding: 11px 24px;
       border-radius: 8px;
       font-weight: 600;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       text-decoration: none;
       cursor: pointer;
       transition: all 0.2s;
@@ -1220,6 +1237,15 @@
       width: 100%;
     }
 
+    .leftright_sec .leftright_inner h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .leftright_sec .leftright_inner ul li {
+      list-style: disc;
+    }
+
     section.facilities-minsec {
       padding: 30px 0 60px;
       background: linear-gradient(135deg, #0d1f3c 0%, #1a4d8f 100%);
@@ -1256,6 +1282,10 @@
       font-weight: 500;
     }
 
+    li.breadcrumb-item.active span {
+      color: #fff;
+    }
+
     .breadcrumb-item+.breadcrumb-item::before {
       content: "›";
       color: #fff;
@@ -1266,6 +1296,13 @@
       border-radius: 20px;
       text-align: center;
       padding: 30px 20px;
+      width: 100%;
+    }
+
+    .other_department .item h4 {
+      font-size: 16px;
+      color: #12395F;
+      margin-bottom: 0;
     }
 
     section.other_departmentsec {
@@ -1372,6 +1409,132 @@
 
 <body>
 
+  <div class="nav-overlay"></div>
+  <div class="left-sidebar">
+    <a href="/appointments" class="icon-link">
+      <img src="/img/book-appointment.png" alt="Book Appointment Icon">
+      <span class="tooltip-text">Book an Appointment</span>
+    </a>
+    <a href="javascript:void(0)" onclick="showChromePopup()" class="icon-link">
+      <img src="/img/whatsapp.png" alt="WhatsApp Icon">
+      <span class="tooltip-text">WhatsApp</span>
+    </a>
+    <a href="/departments/" class="icon-link">
+      <img src="/img/find-doctors.png" alt="Find Doctors Icon">
+      <span class="tooltip-text">Find a Doctor</span>
+    </a>
+    <a href="tel:8066668800" class="icon-link">
+      <img src="/img/call-icon.png" alt="Call Icon">
+      <span class="tooltip-text">Call Us</span>
+    </a>
+  </div>
+
+  <header class="new-header">
+    <div class="header-top-container">
+      <div class="container header-top-content">
+        <div class="mobile_head">
+          <a href="/" class="logo">
+            <div class="header-logos">
+              <div class="logo-wrapper">
+                <img src="/img/logo.png" alt="AarogyaHastha Hospitals Logo" class="header-logo-img">
+              </div>
+              <div class="logo-wrapper new-logo-wrapper">
+                <img src="/img/NABH_Logo-01.png" alt="New Hospital Logo" class="header-logo-img new-logo-img">
+              </div>
+            </div>
+          </a>
+          <button class="navbar-toggle d-lg-none" id="mobile-menu-toggle">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <div class="header-contact">
+          <span class="appointment-number">
+            <div class="contact-label">Appointments</div>
+            <div class="contact-row">
+              <i class="fa fa-phone"></i>
+              <a href="tel:08066668811">080 6666 8811/22/33</a>
+            </div>
+          </span>
+          <span class="emergency-number">
+            <div class="contact-label">24/7 Ambulance</div>
+            <div class="contact-row">
+              <i class="fa fa-ambulance"></i>
+              <a href="tel:08066668877">080 6666 8877/88</a>
+            </div>
+          </span>
+        </div>
+      </div>
+
+      <div class="ambulance-animation-container">
+        <div class="ambulance-animation">
+          <div class="ambulance-icon">
+            <img src="/img/ambulance.png" alt="Ambulance" />
+          </div>
+          <div class="ambulance-number">
+            <a href="tel:08066668877">Emergency: 080 6666 8877/88</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-container">
+        <div class="container nav-content">
+          <ul id="mobile-nav" class="nav-list d-lg-none">
+            <button class="nav-close-btn" id="mobile-menu-close">×</button>
+            <li><a class="nav-links" href="/">Home</a></li>
+            <li><a class="nav-links" href="/appointments">Appointments</a></li>
+            <li><a class="nav-links" href="/doctors">Doctors</a></li>
+            <li><a class="nav-links" href="/departments/">Departments</a></li>
+            <li><a class="nav-links" href="/health-packages">Health Packages</a></li>
+            <li><a class="nav-links" href="/sports-packages">Sports Packages</a></li>
+            <li><a class="nav-links" href="/blog">Blog</a></li>
+            <li><a class="nav-links" href="/about">About Us</a></li>
+            <li class="dropdown">
+              <a class="nav-links" href="/contact">Contact</a>
+              <ul class="dropdown-menu">
+                <li><a
+                    href="https://www.google.com/search?sca_esv=01d7d1da4f3739f4&sxsrf=AE3TifMajnR1cj7CV7KMp-OAhDhG6-ag5A:1757584508053&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E67a9GN5xsFdNX82bZli0D47ZU-t7_RrF_VvCuEUJnWTI5SR80ndLu5MxI-lgdtIvv6GkmwZO2uyJfSHoUpzWU5bjtfVoFrfNvZ8hwgIvFvNDwqWmX3a7tdbZfx8SWbB5YgDksnqmrDV4yojH420D2gkt6js&q=AAROGYA+HASTHA+HOSPITALS+-+CENTRE+FOR+SURGICAL+EXCELLENCE+Reviews&sa=X&ved=2ahUKEwiMnY_CuNCPAxXKTGwGHZhvD64Q0bkNegQIKhAD&biw=1280&bih=585&dpr=1.5#lrd=0x3bae132a0bbeb64b:0x626c13b98813a8a3,3,,,,">Review
+                    us</a>
+                </li>
+                <li><a href="#" class="write-review-btn">Write a message to ED</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="main-nav" id="main-navigation">
+            <li><a class="nav-links" href="/">Home</a></li>
+            <li><a class="nav-links" href="/appointments">Appointments</a></li>
+            <li><a class="nav-links" href="/doctors">Doctors</a></li>
+            <li><a class="nav-links" href="/departments/">Departments</a></li>
+            <li><a class="nav-links" href="/health-packages">Health Packages</a></li>
+            <li><a class="nav-links" href="/sports-packages">Sports Packages</a></li>
+            <li><a class="nav-links" href="/blog">Blog</a></li>
+            <li class="dropdown">
+              <a class="nav-links" href="/about">About us <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+
+                <li>
+                  <a href="/bmw_report" target="_blank">
+                    <i class="fa-solid fa-circle-info"></i> BMW Report
+                  </a>
+
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="nav-links" href="/contact">Contact <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a
+                    href="https://www.google.com/search?sca_esv=01d7d1da4f3739f4&sxsrf=AE3TifONK5RnA4evxGz8cGk4CrHNvVAxYg:1757584553118&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E67a9GN5xsFdNX82bZli0D47ZU-t7_RrF_VvCuEUJnWTI5SR80ndLu5MxI-lgdtIvv6GkmwZO2uyJfSHoUpzWU5bjtfVoFrfNvZ8hwgIvFvNDwqWmX3a7tdbZfx8SWbB5YgDksnqmrDV4yojH420D2gkt6js&q=AAROGYA+HASTHA+HOSPITALS+-+CENTRE+FOR+SURGICAL+EXCELLENCE+Reviews&sa=X&ved=2ahUKEwjU_M3XuNCPAxU-RmwGHaDaFFcQ0bkNegQIKBAD&biw=1280&bih=585&dpr=1.5#lrd=0x3bae132a0bbeb64b:0x626c13b98813a8a3,3,,,,"
+                    target="_blank"><i class="fa-solid fa-star"></i> Review us</a></li>
+                <li><a href="#" class="write-review-btn"><i class="fa-solid fa-envelope"></i> Write a
+                    message to ED</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
   <!-- ══════════ HERO ══════════ -->
   <section class="hero">
     <div class="hero-inner">
@@ -1436,9 +1599,9 @@
   <!-- ══════════ STICKY NAV ══════════ -->
   <nav class="section-nav" id="stickyNav">
     <div class="section-nav-inner">
-      <a class="nav-tab active" href="#overview">Overview</a>
+      <a class="nav-tab active" href="#specialists">Our Specialists</a>
+      <a class="nav-tab" href="#overview">Overview</a>
       <a class="nav-tab" href="#services">Our Services</a>
-      <a class="nav-tab" href="#specialists">Our Specialists</a>
       <a class="nav-tab" href="#blog">Blog &amp; Resources</a>
       <a class="nav-tab" href="#faq">FAQs</a>
     </div>
@@ -1504,7 +1667,7 @@
       </div>
 
       <div class="concern-cta-actions" style="text-align:center; justify-content: center;">
-        <a href="https://aarogyahastha.com/doctors/" class="btn-primary " style="font-size:0.95rem;">View All
+        <a href="https://aarogyahastha.com/doctors/" class="btn-primary " style="font-size:0.75rem;">View All
           Specialists →</a>
       </div>
       <!-- CTA 3: Urgency nudge — user has seen the doctors, push to book -->
@@ -1946,7 +2109,7 @@
       <!--  -->
     </div>
   </section>
-<!-- ══════════ Other Department ══════════ -->
+  <!-- ══════════ Other Department ══════════ -->
   <section class="other_departmentsec">
     <div class="container">
       <div class="section-header">
@@ -2064,7 +2227,7 @@
       </div>
     </div>
   </section>
-  
+
   <!-- ══════════ FAQ ══════════ -->
 
   <section id="faq">
@@ -2246,6 +2409,113 @@
     </div>
   </section>
   <!-- ══════════ EXIT-INTENT POPUP ══════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="logo-wrapper"><img loading="lazy" src="/img/logo.png" alt="AarogyaHastha Hospitals Logo"></div>
+          <p><a
+              href="https://www.google.com/maps/dir//Site+No.+2,+No.+2816%2F2,+SY.87,+Kasavanahalli+Main+Rd,+near+1st+Cross+Road,+opposite+HM+Symphony,+Bengaluru,+Karnataka+560035/@12.9007391,77.6745367,21769m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x3bae132a0bbeb64b:0x626c13b98813a8a3!2m2!1d77.67569!2d12.9005956?entry=ttu&g_ep=EgoyMDI1MDkxNi4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank" style="text-decoration: none; color: inherit;">Site No. 2, Kasavanahalli
+              Main Rd, near 1st
+              Cross Road, opposite HM Symphony, Bengaluru, Karnataka 560035</a></p>
+          <div class="social-icons mt-4">
+            <a href="https://www.instagram.com/aarogyahastha/" target="_blank"><img src="/img/icon-insta.png"
+                alt="Instagram"></a>
+            <a href="https://www.facebook.com/aarogyahastha" target="_blank"><img src="/img/icon-fb.png"
+                alt="Facebook"></a>
+            <a href="https://www.linkedin.com/company/aarogya-hastha/" target="_blank"><img src="/img/icon-linkedin.png"
+                alt="LinkedIn"></a>
+            <a href="https://twitter.com/AarogyaHastha" target="_blank"><img src="/img/icon-twitter.png"
+                alt="Twitter"></a>
+            <a href="https://www.youtube.com/channel/UCeQv8lTLIT4btbjgLxYzYrw" target="_blank"><img
+                src="/img/icon-youtube.png" alt="YouTube"></a>
+            <a href="javascript:void(0)" onclick="showChromePopup()"><img src="/img/icon-whatsapp.png"
+                alt="WhatsApp"></a>
+          </div>
+          <div class="app-download" style="margin-top: 25px;">
+            <h4 style="font-size: 16px; margin-bottom: 15px;">Download App for more benefits</h4>
+            <div class="app-download-buttons">
+
+              <a href="https://play.google.com/store/apps/details?id=com.better.aarogyahastha" target="_blank"
+                class="app-download-btn"><img src="/img/play-store.png" alt="Get it on Google Play"></a>
+              <a href="https://apps.apple.com/in/app/aarogya-hastha/id6739343936" target="_blank"
+                class="app-download-btn"><img src="/img/app-store.png" alt="Download on the App Store"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-links-wrapper">
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/appointments">Appointments</a></li>
+              <li><a href="/doctors">Doctors</a></li>
+              <li><a href="/departments/">Departments</a></li>
+              <li><a href="/health-packages">Health Packages</a></li>
+              <li><a href="/sports-packages">Sports Packages</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column" style="flex: 2;">
+            <h4>Our Departments</h4>
+            <ul class="footer-links footer-links-multi-column">
+              <li><a href="/departments/general-surgery">General Surgery</a></li>
+              <li><a href="/departments/neurosurgery">Neurosurgery</a></li>
+              <li><a href="/departments/orthopaedics">Orthopaedics</a></li>
+              <li><a href="/departments/anaesthesia">Anaesthesiology</a></li>
+              <li><a href="/departments/pain-medicine">Pain Medicine</a></li>
+              <li><a href="/departments/general-medicine">General Medicine</a></li>
+              <li><a href="/departments/lab-medicine">Lab Medicine</a></li>
+              <li><a href="/departments/paediatrics">Paediatrics</a></li>
+              <li><a href="/departments/physiotherapy">Physiotherapy</a></li>
+              <li><a href="/departments/dermatology">Dermatology</a></li>
+              <li><a href="/departments/ent">ENT</a></li>
+              <li><a href="/departments/emergency-medicine">Emergency Medicine</a></li>
+              <li><a href="/departments/nephrology">Nephrology</a></li>
+              <li><a href="/departments/urology">Urology</a></li>
+              <li><a href="/departments/medical-gastroenterology">Medical Gastroenterology</a></li>
+              <li><a href="/departments/minimal-access-surgery">Minimal Access Surgery</a></li>
+              <li><a href="/departments/plastic-surgery">Plastic Surgery</a></li>
+              <li><a href="/departments/obg">Obstetrics & Gynaecology</a></li>
+              <li><a href="/departments/surgical-gastroenterology">Surgical Gastroenterology</a></li>
+              <li><a href="/departments/radiology">Radiology</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>Copyright © 2025, all Rights Reserved to Aarogya Hastha Hospitals Pvt Ltd | <a
+            href="/terms-and-conditions">Terms & Conditions</a> | <a href="/privacy-policy">Privacy
+            Policy</a> | <a href="/disclaimer">Disclaimer</a></p>
+      </div>
+    </div>
+  </footer>
+
+
+  <a href="#" id="scrollToTopBtn" class="scroll-to-top-btn" title="Scroll to top" aria-label="Scroll to top"><i
+      class="fa fa-arrow-up"></i></a>
+  <button id="mobile-sidebar-toggle" class="d-lg-none"><i class="fa fa-bars"></i></button>
+
+  <div id="chrome-popup" class="chrome-popup" aria-hidden="true">
+    <div class="chrome-popup__content">
+      <p class="chrome-popup__title">Open WhatsApp?</p>
+      <p class="chrome-popup__url">https://api.whatsapp.com wants to open this application.</p>
+      <label class="chrome-popup__checkbox">
+        <input type="checkbox"> Always allow api.whatsapp.com to open links of this type in the associated
+        app
+      </label>
+    </div>
+    <div class="chrome-popup__actions">
+      <a href="whatsapp://send?phone=919036092727" class="chrome-btn chrome-btn--blue">Open with App</a>
+      <a href="https://web.whatsapp.com/send?phone=9036092727" target="_blank" class="chrome-btn chrome-btn--green">Open
+        with Web</a>
+      <button class="chrome-btn chrome-btn--grey" onclick="hideChromePopup()">Cancel</button>
+    </div>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -2288,7 +2558,7 @@
     });
 
     // Active nav tab on scroll
-    const sections = ['overview', 'services', 'specialists', 'blog', 'faq'];
+    const sections = ['specialists', 'overview', 'services', 'blog', 'faq'];
     const tabs = document.querySelectorAll('.nav-tab');
 
     window.addEventListener('scroll', () => {
@@ -2351,6 +2621,13 @@
 
 
   </script>
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://fyndbetter.com/chatbot/aarogya_chatbot"></script>
+  <script type="text/javascript" src="https://unpkg.com/youtube-background/jquery.youtube-background.min.js"></script>
+  <script src="/js/myscript.js"></script>
 </body>
 
 </html>
