@@ -1311,6 +1311,10 @@
             color: rgba(255, 255, 255, .65)
         }
 
+        .quote-section .section-desc b {
+            color: #E8A838;
+        }
+
         .quote-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -1412,29 +1416,205 @@
         }
 
         /* ═══ INSURANCE PARTNERS ═══ */
-        .insurance-section {
-            background: var(--light-bg);
-            padding: 50px 0
+        .ins-wrap {
+            padding: 2.5rem 1.5rem;
+            background: linear-gradient(145deg, #071a2e 0%, #0d2b47 60%, #0a2238 100%);
+            border-radius: var(--border-radius-lg);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
         }
 
-        .insurance-logos {
-            display: flex;
-            justify-content: center;
+        .blob1 {
+            position: absolute;
+            top: -80px;
+            right: -80px;
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            background: rgba(55, 138, 221, 0.07);
+            pointer-events: none;
+        }
+
+        .blob2 {
+            position: absolute;
+            bottom: -60px;
+            left: -60px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: rgba(29, 158, 117, 0.07);
+            pointer-events: none;
+        }
+
+        .ins-pill {
+            display: inline-flex;
             align-items: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            opacity: .6;
-            filter: grayscale(100%)
+            gap: 6px;
+            background: rgba(55, 138, 221, 0.12);
+            border: 1px solid rgba(55, 138, 221, 0.3);
+            color: #85b7eb;
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            padding: 5px 14px;
+            border-radius: 20px;
+            margin-bottom: 1rem;
         }
 
-        .insurance-logos span {
-            font-size: .9rem;
-            font-weight: 700;
-            color: var(--muted);
-            padding: 12px 20px;
-            background: #fff;
-            border-radius: 8px;
-            border: 1px solid var(--border)
+        .ins-pill-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #1d9e75;
+        }
+
+        .ins-h {
+            font-size: 21px;
+            font-weight: 500;
+            color: #fff;
+            margin: 0 0 0.3rem;
+        }
+
+        .ins-sub {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.42);
+            margin: 0 0 2rem;
+        }
+
+        .ins-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin: 0 auto 12px;
+        }
+
+        .ins-card {
+            background: rgba(255, 255, 255, 0.055);
+            border: 0.5px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 16px 10px 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s, border-color 0.2s, transform 0.18s;
+            cursor: default;
+        }
+
+        .ins-card:hover {
+            background: rgba(255, 255, 255, 0.09);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+
+        .logo-box {
+            width: 100px;
+            border-radius: 7px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+        }
+
+        .ins-name {
+            font-size: 11px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.78);
+            text-align: center;
+            line-height: 1.35;
+        }
+
+        .ins-tag {
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.32);
+            text-align: center;
+        }
+
+        .ins-tag.health {
+            color: #5dcaa5;
+        }
+
+        .ins-tag.general {
+            color: #85b7eb;
+        }
+
+        .ins-tag.life {
+            color: #f0997b;
+        }
+
+        .more-card {
+            background: rgba(55, 138, 221, 0.1);
+            border: 0.5px solid rgba(55, 138, 221, 0.25);
+            border-radius: 12px;
+            padding: 16px 10px 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.18s;
+        }
+
+        .more-card:hover {
+            background: rgba(55, 138, 221, 0.18);
+            transform: translateY(-3px);
+        }
+
+        .more-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(55, 138, 221, 0.18);
+            border: 1px solid rgba(55, 138, 221, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 300;
+            color: #85b7eb;
+            line-height: 1;
+            padding-bottom: 7px;
+        }
+
+        .more-label {
+            font-size: 12px;
+            font-weight: 500;
+            color: #85b7eb;
+        }
+
+        .more-sub {
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .ins-stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .ins-stat-num {
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        .ins-stat-lbl {
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.35);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .ins-divider {
+            width: 1px;
+            height: 28px;
+            background: rgba(255, 255, 255, 0.1);
         }
 
         /* ═══ FAQ ═══ */
@@ -1739,7 +1919,8 @@
     <div class="top-bar">
         <div class="container">
             <div class="top-bar-logo">
-                <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/ah_logo.png" alt="Aarogya Hastha Hospitals">
+                <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/ah_logo.png"
+                    alt="Aarogya Hastha Hospitals">
             </div>
             <div class="top-bar-actions">
                 <a href="tel:08066668811" class="top-bar-phone">
@@ -1768,7 +1949,8 @@
             <div class="hero-content">
                 <div class="hero-badge"><span class="dot"></span> NABH Certified · Sarjapur Road, Bangalore</div>
                 <h1>Got a <br> Knee Replacement Quote?<br><span>Allow us to Beat It. </span></h1>
-                <p class="hero-sub">With Advanced Medical Care, Better Care & Cashless Insurance.</p>
+                <p class="hero-sub">Advanced Medical Care, Superior Support, Cashless Insurance - all at a price that
+                    fits your budget.</p>
                 <p class="hero-desc">Advanced knee replacement by Bangalore's trusted orthopaedic surgeons.
                     All-inclusive pricing, cashless insurance, and a dedicated recovery programme — so you can get back
                     on your feet faster.</p>
@@ -2307,8 +2489,10 @@
             <div class="quote-grid">
                 <div>
                     <p class="section-label">Price Match Promise</p>
-                    <h2 class="section-title">Got a Knee Replacement Quote?<br>Allow us to Beat It.</h2>
-                    <p class="section-desc">Advanced Medical Care, Superior Support, Cashless Insurance - all at a price that fits your budget.</p>
+                    <h2 class="section-title">Got a Knee Replacement Quote?
+                        Allow us to Beat It.</h2>
+                    <p class="section-desc">Advanced Medical Care, Superior Support, Cashless Insurance - all at a price
+                        that fits your budget.</p>
                     <ul class="quote-points">
                         <li><span class="quote-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2.5">
@@ -2362,26 +2546,95 @@
     </section>
 
     <!-- ═══ 13. INSURANCE PARTNERS ═══ -->
-    <section class="insurance-section">
+
+    <div class="ins-wrap">
+        <div class="blob1"></div>
+        <div class="blob2"></div>
         <div class="container">
-            <p class="section-label text-center">Cashless Insurance Partners</p>
-            <h2 class="section-title text-center" style="font-size:1.5rem;margin-bottom:28px;">Empanelled With Major
-                Insurance Providers</h2>
-            <div class="insurance-logos">
-                <span>Star Health</span>
-                <span>HDFC Ergo</span>
-                <span>ICICI Lombard</span>
-                <span>Bajaj Allianz</span>
-                <span>New India Assurance</span>
-                <span>Niva Bupa</span>
-                <span>Care Health</span>
-                <span>+ More</span>
+            <div class="ins-pill"><span class="ins-pill-dot"></span>Cashless Insurance Partners</div>
+            <h2 class="ins-h">Empanelled With Major Insurance Providers</h2>
+            <p class="ins-sub">Direct cashless settlement — no paperwork, no hassle</p>
+
+            <div class="ins-grid">
+
+                <!-- Star Health -->
+                <div class="ins-card">
+                    <div class="logo-box">
+                        <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo1.png"
+                            alt="">
+                    </div>
+                    <div class="ins-name">Star Health</div>
+                </div>
+
+                <!-- HDFC ERGO -->
+                <div class="ins-card">
+                    <div class="logo-box">
+                        <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo2.png"
+                            alt="">
+                    </div>
+                    <div class="ins-name">Niva Bupa</div>
+                </div>
+
+                <!-- ICICI Lombard -->
+                <div class="ins-card">
+                    <div class="logo-box">
+                        <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo3.png"
+                            alt="">
+                    </div>
+                    <div class="ins-name">New India Assurance</div>
+                </div>
+
+                <!-- Bajaj Allianz -->
+                <div class="ins-card">
+                    <div class="logo-box">
+                        <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo4.png"
+                            alt="">
+                    </div>
+                    <div class="ins-name">Bajaj Allianz</div>
+                </div>
+
             </div>
-            <p style="text-align:center;margin-top:16px;font-size:.82rem;color:var(--muted)">💡 <strong
-                    style="color:var(--teal)">Update:</strong> Replace with your actual empanelled insurer logos for
-                maximum trust impact.</p>
+
+            <div class="ins-grid">
+
+                <!-- New India Assurance -->
+                <div class="ins-card">
+                    <div class="logo-box">
+                        <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo5.png"
+                            alt="">
+                    </div>
+                    <div class="ins-name">ICICI Lombard</div>
+                </div>
+
+                <!-- Niva Bupa -->
+                <div class="ins-card">
+                    <div class="logo-box">
+                        <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo6.png"
+                            alt="">
+                    </div>
+                    <div class="ins-name">HDFC ERGO</div>
+                </div>
+
+                <div class="ins-card">
+                    <div class="logo-box">
+                        <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo7.png"
+                            alt="">
+                    </div>
+                    <div class="ins-name">Care Health</div>
+                </div>
+
+                <!-- Care Health (formerly Religare) -->
+
+                <!-- More card -->
+                <div class="more-card"
+                    onclick="window.sendPrompt && sendPrompt('Show me all available cashless insurance partners')">
+
+                    <div class="more-label">+ More</div>
+                </div>
+
+            </div>
         </div>
-    </section>
+    </div>
 
     <!-- ═══ 14. FAQ ═══ -->
     <section class="faq-section" id="faq">
