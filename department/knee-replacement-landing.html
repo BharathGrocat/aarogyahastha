@@ -169,7 +169,7 @@
             gap: 6px;
             font-weight: 600;
             font-size: .9rem;
-                color: #000;
+            color: #000;
         }
 
         .top-bar-phone svg {
@@ -1848,11 +1848,12 @@
         }
 
         @media(max-width:768px) {
-                .top-bar-actions {
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-    }
+            .top-bar-actions {
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+            }
+
             .hero h1 {
                 font-size: 2.2rem
             }
@@ -1916,6 +1917,14 @@
                 flex-direction: column;
                 gap: 12px
             }
+
+            .ins-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .ins-wrap {
+                padding: 2rem 0;
+            }
         }
     </style>
 </head>
@@ -1926,8 +1935,7 @@
     <div class="top-bar">
         <div class="container">
             <div class="top-bar-logo">
-                <img src="https://aarogyahastha.com/static/img/img/logo.png/"
-                    alt="Aarogya Hastha Hospitals">
+                <img src="https://aarogyahastha.com/static/img/img/logo.png/" alt="Aarogya Hastha Hospitals">
             </div>
             <div class="top-bar-actions">
                 <a href="tel:08066668811" class="top-bar-phone">
@@ -2484,8 +2492,7 @@
                     </div>
                 </div>
             </div>
-            <div class="package-note"><strong>💡 Update your pricing:</strong> Replace the ₹X,XX,XXX placeholders with
-                actual package rates. All packages include cashless insurance processing. EMI options available.</div>
+            <div class="package-note"><strong>💡 Note:</strong> Consumables and medicines will be charged separately based on actual usage.</div>
         </div>
     </section>
 
@@ -2634,7 +2641,7 @@
                 <!-- More card -->
                 <div class="more-card"
                     onclick="window.sendPrompt && sendPrompt('Show me all available cashless insurance partners')">
-                    
+
                     <div class="more-label">+ More</div>
                 </div>
 
