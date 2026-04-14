@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laparoscopic & General Surgery in Bangalore | Aarogya Hastha Hospitals</title>
     <meta name="description"
-        content="Advanced laparoscopic & general surgery at Aarogya Hastha Hospitals, Bangalore. Gallbladder, hernia, aappendix & more. Smaller cuts, faster recovery. NABH Certified. Cashless insurance. Book free consultation.">
+        content="Advanced laparoscopic & general surgery at Aarogya Hastha Hospitals, Bangalore. Gallbladder, hernia, aappendix & more. Smaller cuts, faster recovery. Cashless insurance. Book free consultation.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
@@ -916,9 +916,10 @@
             text-align: center;
             color: #fff
         }
+
         .proc-card-icon img {
-    width: 35px;
-}
+            width: 35px;
+        }
 
         .mid-cta h2 {
             color: #fff;
@@ -1003,13 +1004,15 @@
             font-size: 1.8rem;
             font-weight: 800;
             color: var(--navy);
-            font-family: 'Plus Jakarta Sans', sans-serif
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            display: flex;
+            flex-wrap: wrap;
         }
 
         .package-price small {
             font-size: .75rem;
             font-weight: 500;
-            color: var(--muted)
+            color: var(--muted);
         }
 
         .package-body {
@@ -1477,6 +1480,10 @@
             background: rgba(255, 255, 255, 0.1);
         }
 
+        .hero-ctas.bottom_fix {
+            display: none;
+        }
+
         /* RESPONSIVE */
         @media(max-width:1024px) {
             .hero .container {
@@ -1579,6 +1586,36 @@
             .ins-wrap {
                 padding: 2rem 0;
             }
+
+            .top-bar-actions {
+                display: none;
+            }
+
+            .top-bar .container {
+                justify-self: center;
+            }
+
+            .hero-ctas.bottom_fix {
+                display: block;
+                position: fixed;
+                bottom: 0;
+                z-index: 9;
+                width: 100%;
+            }
+
+            .hero-ctas.bottom_fix a {
+                width: 100%;
+                justify-content: center;
+                padding: 14px 0;
+                font-size: 16px;
+                border-radius: 0;
+            }
+        }
+
+        @media(max-width:500px) {
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -1590,6 +1627,8 @@
         <div class="container">
             <div class="top-bar-logo">
                 <img src="https://aarogyahastha.com/static/img/img/logo.png" alt="Aarogya Hastha Hospitals">
+                <img src="https://aarogyahastha.com/static/img/img/NABH_Logo-01.png" alt="New Hospital Logo"
+                    class="header-logo-img new-logo-img">
 
             </div>
             <div class="top-bar-actions">
@@ -1612,7 +1651,7 @@
     <section class="hero" id="book-consultation">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge"><span class="dot"></span> NABH Certified · Sarjapur Road, Bangalore</div>
+                <div class="hero-badge"><span class="dot"></span> Sarjapur Road, Bangalore</div>
                 <h1>Laparoscopic &amp; General Surgery.<br><span>Smaller Cuts. Faster Recovery.</span></h1>
                 <p class="hero-sub">Get Back to Life Sooner.</p>
                 <p class="hero-desc">Advanced keyhole surgery for gallbladder, hernia, appendix &amp; more — by Trusted
@@ -1700,12 +1739,6 @@
                 <div class="trust-badge">
                     <div class="trust-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                        </svg></div><span>NABH Certified</span>
-                </div>
-                <div class="trust-badge">
-                    <div class="trust-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
                             <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                             <polyline points="22 4 12 14.01 9 11.01" />
                         </svg></div><span>1800+ Surgeries</span>
@@ -1744,46 +1777,48 @@
                 surgeons use the latest minimally invasive techniques for faster healing.</p>
             <div class="proc-grid">
                 <div class="proc-card"><span class="proc-tag">Most Common</span>
-                    <div class="proc-card-icon"><img src="https://bharathgrocat.github.io/aarogyahastha/department/image/cholecystectomy.png" alt=""></div>
+                    <div class="proc-card-icon"><img
+                            src="https://bharathgrocat.github.io/aarogyahastha/department/image/cholecystectomy.png"
+                            alt=""></div>
                     <h4>Gallbladder Removal (Cholecystectomy)</h4>
                     <p>Laparoscopic removal of gallbladder for gallstones. 3 tiny incisions, same-day or next-day
                         discharge. No
                         large scars.</p>
                 </div>
                 <div class="proc-card">
-                    <div class="proc-card-icon"><img src="https://bharathgrocat.github.io/aarogyahastha/department/image/disease.png" alt=""></div>
+                    <div class="proc-card-icon"><img
+                            src="https://bharathgrocat.github.io/aarogyahastha/department/image/disease.png" alt="">
+                    </div>
                     <h4>Hernia Repair (Lap / Open)</h4>
                     <p>Inguinal, umbilical, incisional and hiatal hernia repair using mesh reinforcement. Laparoscopic
                         option for
                         faster recovery.</p>
                 </div>
                 <div class="proc-card">
-                    <div class="proc-card-icon"><img src="https://bharathgrocat.github.io/aarogyahastha/department/image/appendix.png" alt=""></div>
+                    <div class="proc-card-icon"><img
+                            src="https://bharathgrocat.github.io/aarogyahastha/department/image/appendix.png" alt="">
+                    </div>
                     <h4>Appendix Removal (Appendectomy)</h4>
                     <p>Emergency and elective laparoscopic appendectomy. Minimal pain, small incisions, back to work in
                         a week.
                     </p>
                 </div>
                 <div class="proc-card">
-                    <div class="proc-card-icon"><img src="https://bharathgrocat.github.io/aarogyahastha/department/image/chair.png" alt=""></div>
+                    <div class="proc-card-icon"><img
+                            src="https://bharathgrocat.github.io/aarogyahastha/department/image/chair.png" alt=""></div>
                     <h4>Piles, Fissure &amp; Fistula</h4>
                     <p>Laser and minimally invasive procedures for haemorrhoids, fissures, and fistula. Reduced pain,
                         faster
                         healing.</p>
                 </div>
                 <div class="proc-card">
-                    <div class="proc-card-icon"><img src="https://bharathgrocat.github.io/aarogyahastha/department/image/thyroid-gland.png" alt=""></div>
+                    <div class="proc-card-icon"><img
+                            src="https://bharathgrocat.github.io/aarogyahastha/department/image/thyroid-gland.png"
+                            alt=""></div>
                     <h4>Thyroid Surgery (Thyroidectomy)</h4>
                     <p>Safe removal of thyroid gland for nodules, goitre, or cancer. Expert endocrine surgeons with
                         minimal
                         scarring.</p>
-                </div>
-                <div class="proc-card">
-                    <div class="proc-card-icon"><img src="https://bharathgrocat.github.io/aarogyahastha/department/image/augmentation-black.png" alt=""></div>
-                    <h4>Breast Surgery</h4>
-                    <p>Lumpectomy, mastectomy, and breast reconstruction. Early detection screening available.
-                        Compassionate,
-                        private care.</p>
                 </div>
             </div>
         </div>
@@ -1975,7 +2010,8 @@
                     <div class="package-header">
                         <h4>Appendicectomy (laparoscopic)</h4>
                         <p class="package-desc">Gallbladder removal — keyhole surgery</p>
-                        <div class="package-price">₹75,000*<br><small>all-inclusive + Medicines + Laser</small></div>
+                        <div class="package-price">₹75,000*<br><small><b>Inclusive:</b> Surgery Charges + Bed Charges +
+                                Pro Op Test Minimal Invesitgation </small></div>
                     </div>
                     <div class="package-body">
                         <ul class="package-features">
@@ -1991,25 +2027,25 @@
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                     <polyline points="20 6 9 17 4 12" />
                                 </svg> All medicines included</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Post-op follow-up visits</li>
+
                         </ul><button class="package-cta"
                             onclick="document.getElementById('book-consultation').scrollIntoView({behavior:'smooth'})">Enquire
                             Now</button>
                     </div>
                 </div>
-                <div class="package-card featured"><span class="package-tag">Most Popular</span>
+                <div class="package-card featured">
+                    <!-- <span class="package-tag">Most Popular</span> -->
                     <div class="package-header">
                         <h4>Fissurectomy / Hemorrhoidectomy</h4>
-                        <p class="package-desc">Inguinal / umbilical / incisional hernia — mesh repair</p>
-                        <div class="package-price">₹50,000*<br><small>all-inclusive + Medicines+Laser</small></div>
+                        <p class="package-desc">Inguinal / umbilical / incisional hernia</p>
+                        <div class="package-price">₹50,000*<br><small><b>Inclusive:</b> Surgery Charges + Bed Charges +
+                                Pro Op Test Minimal Invesitgation </small></div>
                     </div>
                     <div class="package-body">
                         <ul class="package-features">
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                     <polyline points="20 6 9 17 4 12" />
-                                </svg> Laparoscopic mesh repair</li>
+                                </svg> Laparoscopic Techniques</li>
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                     <polyline points="20 6 9 17 4 12" />
                                 </svg> 1-2 days hospital stay</li>
@@ -2022,9 +2058,6 @@
                             <!-- <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                     <polyline points="20 6 9 17 4 12" />
                                 </svg> Low recurrence rate</li> -->
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Post-op follow-up visits</li>
                         </ul><button class="package-cta"
                             onclick="document.getElementById('book-consultation').scrollIntoView({behavior:'smooth'})">Enquire
                             Now</button>
@@ -2034,7 +2067,8 @@
                     <div class="package-header">
                         <h4>Fistulectomy</h4>
                         <p class="package-desc">Appendix removal — emergency or planned</p>
-                        <div class="package-price">₹50,000*<br><small>all-inclusive + Medicines</small></div>
+                        <div class="package-price">₹50,000*<br><small><b>Inclusive:</b> Surgery Charges + Bed Charges +
+                                Pro Op Test Minimal Invesitgation </small></div>
                     </div>
                     <div class="package-body">
                         <ul class="package-features">
@@ -2050,9 +2084,6 @@
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                     <polyline points="20 6 9 17 4 12" />
                                 </svg> All medicines included</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Post-op follow-up visits</li>
                         </ul><button class="package-cta"
                             onclick="document.getElementById('book-consultation').scrollIntoView({behavior:'smooth'})">Enquire
                             Now</button>
@@ -2062,7 +2093,8 @@
                     <div class="package-header">
                         <h4>Umbilical Hernia </h4>
                         <p class="package-desc">Appendix removal — emergency or planned</p>
-                        <div class="package-price">₹75,000*<br><small>all-inclusive + Medicines + Mesh</small></div>
+                        <div class="package-price">₹75,000*<br><small><b>Inclusive:</b> Surgery Charges + Bed Charges +
+                                Pro Op Test Minimal Invesitgation </small></div>
                     </div>
                     <div class="package-body">
                         <ul class="package-features">
@@ -2078,9 +2110,6 @@
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                     <polyline points="20 6 9 17 4 12" />
                                 </svg> All medicines included</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Post-op follow-up visits</li>
                         </ul><button class="package-cta"
                             onclick="document.getElementById('book-consultation').scrollIntoView({behavior:'smooth'})">Enquire
                             Now</button>
@@ -2090,7 +2119,8 @@
                     <div class="package-header">
                         <h4>Inguinal Hernia</h4>
                         <p class="package-desc">Appendix removal — emergency or planned</p>
-                        <div class="package-price">₹80,000*<br><small>all-inclusive + Medicines + Mesh</small></div>
+                        <div class="package-price">₹80,000*<br><small><b>Inclusive:</b> Surgery Charges + Bed Charges +
+                                Pro Op Test Minimal Invesitgation </small></div>
                     </div>
                     <div class="package-body">
                         <ul class="package-features">
@@ -2106,9 +2136,6 @@
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                     <polyline points="20 6 9 17 4 12" />
                                 </svg> All medicines included</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Post-op follow-up visits</li>
                         </ul><button class="package-cta"
                             onclick="document.getElementById('book-consultation').scrollIntoView({behavior:'smooth'})">Enquire
                             Now</button>
@@ -2118,7 +2145,8 @@
                     <div class="package-header">
                         <h4>Laparoscopic Cholecystectomy</h4>
                         <p class="package-desc">Appendix removal — emergency or planned</p>
-                        <div class="package-price">₹75,000*<br><small>all-inclusive + Medicines</small></div>
+                        <div class="package-price">₹75,000*<br><small><b>Inclusive:</b> Surgery Charges + Bed Charges +
+                                Pro Op Test Minimal Invesitgation </small></div>
                     </div>
                     <div class="package-body">
                         <ul class="package-features">
@@ -2134,16 +2162,14 @@
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                     <polyline points="20 6 9 17 4 12" />
                                 </svg> All medicines included</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Post-op follow-up visits</li>
                         </ul><button class="package-cta"
                             onclick="document.getElementById('book-consultation').scrollIntoView({behavior:'smooth'})">Enquire
                             Now</button>
                     </div>
                 </div>
             </div>
-            <div class="package-note"><strong>💡 Note:</strong> Consumables and medicines will be charged separately based on actual usage.</div>
+            <div class="package-note"><strong>💡 Exclusive:</strong> Drugs Consumables + Implant + Higherend
+                investigations + Blood Components </div>
         </div>
     </section>
 
@@ -2362,9 +2388,6 @@
             </div>
             <div class="final-trust">
                 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                    </svg> NABH Certified</span>
-                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                         <polyline points="22 4 12 14.01 9 11.01" />
                     </svg> 1800+ Surgeries</span>
@@ -2403,6 +2426,11 @@
             <path
                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
         </svg></a>
+
+
+    <div class="hero-ctas bottom_fix">
+        <a href="#book-consultation" class="btn-primary">Book Free Consultation</a>
+    </div>
 
     <script>
         function toggleFaq(btn) { const a = btn.nextElementSibling, o = btn.classList.contains('active'); document.querySelectorAll('.faq-question').forEach(q => { q.classList.remove('active'); q.nextElementSibling.style.maxHeight = '0' }); if (!o) { btn.classList.add('active'); a.style.maxHeight = a.scrollHeight + 'px' } }
