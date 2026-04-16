@@ -2064,15 +2064,15 @@
                 <form id="consultForm" onsubmit="return false;">
                     <div class="form-group">
                         <label>Full Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        <input type="text" id="name" placeholder="Enter your name" required>
                     </div>
                     <div class="form-group">
                         <label>Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                        <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" required>
                     </div>
                     <div class="form-group">
                         <label>Which knee needs attention?</label>
-                        <select id="knee" name="knee">
+                        <select id="knee">
                             <option value="">Select...</option>
                             <option>Left Knee</option>
                             <option>Right Knee</option>
@@ -2400,7 +2400,7 @@
     <section class="mid-cta">
         <div class="container">
             <h2>Still Thinking? Let's Talk.</h2>
-            <p>A 10-minute call with our orthopaedic specialist can give you the clarity you need. No pressure, no
+            <p>Consultation with our orthopaedic specialist can give you the clarity you need. No pressure, no
                 obligation.</p>
             <div class="mid-cta-buttons">
                 <a href="#book-consultation" class="btn-accent"><svg width="18" height="18" viewBox="0 0 24 24"
@@ -2428,27 +2428,26 @@
                 <div class="package-card">
                     <div class="package-header">
                         <h4>Total Knee Replacement (Unilateral)</h4>
-                        <p class="package-desc">High-quality cemented implant with proven track record</p>
                         <div class="package-price"><span class="strike"></span>₹1,25,000*<br><small><b>Inclusive:</b>
-                                Surgery Charges + Bed Charges + Pro Op Test Minimal Invesitgation</small></div>
+                                Surgery Charges + Bed Charges + Pre Test Minimal Invesitgation</small></div>
                     </div>
                     <div class="package-body">
                         <ul class="package-features">
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                     <polyline points="20 6 9 17 4 12" />
-                                </svg> Cemented standard implant</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                    <polyline points="20 6 9 17 4 12" />
                                 </svg> 4–5 days hospital stay</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Surgeon + anaesthesia fees</li>
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                     <polyline points="20 6 9 17 4 12" />
                                 </svg> In-hospital physiotherapy</li>
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                     <polyline points="20 6 9 17 4 12" />
+                                </svg> Dedicated diet counselling</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12" />
                                 </svg> Post-op follow-up visits</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg> 24/7 emergency availability</li>
                         </ul>
                         <button class="package-cta"
                             onclick="document.getElementById('book-consultation').scrollIntoView({behavior:'smooth'})">Enquire
@@ -2459,15 +2458,11 @@
                     <!-- <span class="package-tag">Most Popular</span> -->
                     <div class="package-header">
                         <h4>Total Knee Replacement (Bilateral)</h4>
-                        <p class="package-desc">High-flex imported implant for active lifestyles</p>
                         <div class="package-price"><span class="strike"></span>₹1,75,000*<br><small><b>Inclusive:</b>
-                                Surgery Charges + Bed Charges + Pro Op Test Minimal Invesitgation</small></div>
+                                Surgery Charges + Bed Charges + Pre Test Minimal Invesitgation</small></div>
                     </div>
                     <div class="package-body">
                         <ul class="package-features">
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> High-flex imported implant</li>
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                     <polyline points="20 6 9 17 4 12" />
                                 </svg> 6-7 days hospital stay</li>
@@ -2476,10 +2471,16 @@
                                 </svg> Enhanced recovery protocol</li>
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                     <polyline points="20 6 9 17 4 12" />
-                                </svg> Extended physio + home care</li>
+                                </svg> In-hospital physiotherapy</li>
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                     <polyline points="20 6 9 17 4 12" />
                                 </svg> Dedicated diet counselling</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg> Post-op follow-up visits</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg> 24/7 emergency availability</li>
                         </ul>
                         <button class="package-cta"
                             onclick="document.getElementById('book-consultation').scrollIntoView({behavior:'smooth'})">Enquire
@@ -2489,16 +2490,13 @@
                 <div class="package-card">
                     <div class="package-header">
                         <h4>ACL Reconstruction</h4>
-                        <p class="package-desc">Save More with One Admission</p>
                         <div class="package-price">₹85,000*<br><small><b>Inclusive:</b> Surgery Charges + Bed Charges +
-                                Pro Op Test Minimal Invesitgation</small>
+                                Pre Test Minimal Invesitgation</small>
                         </div>
                     </div>
                     <div class="package-body">
                         <ul class="package-features">
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Both knees in one surgery</li>
+
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                     <polyline points="20 6 9 17 4 12" />
                                 </svg> 3-4 days hospital stay</li>
@@ -2513,7 +2511,10 @@
                                 </svg> Intensive physio programme</li>
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                     <polyline points="20 6 9 17 4 12" />
-                                </svg> Priority follow-up schedule</li>
+                                </svg> Post-op follow-up visits</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg> 24/7 emergency availability</li>
                         </ul>
                         <button class="package-cta"
                             onclick="document.getElementById('book-consultation').scrollIntoView({behavior:'smooth'})">Enquire
@@ -2523,19 +2524,16 @@
                 <div class="package-card">
                     <div class="package-header">
                         <h4>Meniscus Repair</h4>
-                        <p class="package-desc">Save More with One Admission</p>
                         <div class="package-price">₹1,00,000*<br><small><b>Inclusive:</b> Surgery Charges + Bed Charges
-                                + Pro Op Test Minimal Invesitgation</small>
+                                + Pre Test Minimal Invesitgation</small>
                         </div>
                     </div>
                     <div class="package-body">
                         <ul class="package-features">
+
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                     <polyline points="20 6 9 17 4 12" />
-                                </svg> Both knees in one surgery</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> 6–7 days hospital stay</li>
+                                </svg> 4-5 days hospital stay</li>
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                     <polyline points="20 6 9 17 4 12" />
                                 </svg> Significant cost savings</li>
@@ -2547,7 +2545,10 @@
                                 </svg> Intensive physio programme</li>
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                     <polyline points="20 6 9 17 4 12" />
-                                </svg> Priority follow-up schedule</li>
+                                </svg> Post-op follow-up visits</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg> 24/7 emergency availability</li>
                         </ul>
                         <button class="package-cta"
                             onclick="document.getElementById('book-consultation').scrollIntoView({behavior:'smooth'})">Enquire
@@ -2624,7 +2625,7 @@
 
     <!-- ═══ 13. INSURANCE PARTNERS ═══ -->
 
-    <div class="ins-wrap">
+     <div class="ins-wrap">
         <div class="blob1"></div>
         <div class="blob2"></div>
         <div class="container">
@@ -2640,7 +2641,7 @@
                         <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo1.png"
                             alt="">
                     </div>
-                    <div class="ins-name">Star Health</div>
+                    <!-- <div class="ins-name">Star Health</div> -->
                 </div>
 
                 <!-- HDFC ERGO -->
@@ -2649,7 +2650,7 @@
                         <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo2.png"
                             alt="">
                     </div>
-                    <div class="ins-name">Niva Bupa</div>
+                    <!-- <div class="ins-name">Niva Bupa</div> -->
                 </div>
 
                 <!-- ICICI Lombard -->
@@ -2658,7 +2659,7 @@
                         <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo3.png"
                             alt="">
                     </div>
-                    <div class="ins-name">New India Assurance</div>
+                    <!-- <div class="ins-name">New India Assurance</div> -->
                 </div>
 
                 <!-- Bajaj Allianz -->
@@ -2667,7 +2668,7 @@
                         <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo4.png"
                             alt="">
                     </div>
-                    <div class="ins-name">Bajaj Allianz</div>
+                    <!-- <div class="ins-name">Bajaj Allianz</div> -->
                 </div>
 
             </div>
@@ -2680,7 +2681,7 @@
                         <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo5.png"
                             alt="">
                     </div>
-                    <div class="ins-name">ICICI Lombard</div>
+                    <!-- <div class="ins-name">ICICI Lombard</div> -->
                 </div>
 
                 <!-- Niva Bupa -->
@@ -2689,7 +2690,7 @@
                         <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo6.png"
                             alt="">
                     </div>
-                    <div class="ins-name">HDFC ERGO</div>
+                    <!-- <div class="ins-name">HDFC ERGO</div> -->
                 </div>
 
                 <div class="ins-card">
@@ -2697,9 +2698,43 @@
                         <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo7.png"
                             alt="">
                     </div>
-                    <div class="ins-name">Care Health</div>
+                    <!-- <div class="ins-name">Care Health</div> -->
                 </div>
 
+                 <div class="ins-card">
+                    <div class="logo-box">
+                        <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo8.png"
+                            alt="">
+                    </div>
+                    <!-- <div class="ins-name">Care Health</div> -->
+                </div>
+
+
+
+                 <div class="ins-card">
+                    <div class="logo-box">
+                        <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo9.png"
+                            alt="">
+                    </div>
+                    <!-- <div class="ins-name">Care Health</div> -->
+                </div>
+
+
+                 <div class="ins-card">
+                    <div class="logo-box">
+                        <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo10.png"
+                            alt="">
+                    </div>
+                    <!-- <div class="ins-name">Care Health</div> -->
+                </div>
+
+                 <div class="ins-card">
+                    <div class="logo-box">
+                        <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo11.png"
+                            alt="">
+                    </div>
+                    <!-- <div class="ins-name">Care Health</div> -->
+                </div>
                 <!-- Care Health (formerly Religare) -->
 
                 <!-- More card -->
@@ -2927,38 +2962,48 @@
         document.getElementById("consultForm").addEventListener("submit", function (e) {
             e.preventDefault();
 
-            const form = new FormData(this);
+            // ✅ Get actual values
+            const name = document.getElementById("name").value;
+            const phone = document.getElementById("phone").value;
+            const knee = document.getElementById("knee").value;
 
-            fetch("http://localhost/department/submit.php", {
+            // Create form data
+            const formData = new URLSearchParams();
+            formData.append("orgId", "1720949403878x756898931863191600");
+            formData.append("patientName", name);
+            formData.append("contactNumber", phone);
+            formData.append("description", knee);
+            formData.append("source", "Website");
+
+            fetch("https://api.fyndbetter.com/create_lead_with_source", {
                 method: "POST",
-                body: form
+                headers: {
+                    "X-Auth-Key": "Zx7Lp2Xv9Ka4Nz8Rw1TgYcDh6BsFeJu5",
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: formData
             })
-                .then(async res => {
-                    console.log("STATUS:", res.status);
+                .then(async (response) => {
+                    console.log("STATUS:", response.status);
 
-                    const text = await res.text();
+                    const text = await response.text();
                     console.log("RAW RESPONSE:", text);
 
                     try {
                         const data = JSON.parse(text);
 
-                        if (data?.resp?.status?.toLowerCase() === "success") {
-
-                            const leadId = data?.resp?.response?.leadid;
-
-                            // Redirect to thank you page with lead ID
-                            window.location.href = "thank-you.html?leadId=" + leadId;
-
+                        if (data?.resp?.status === "SUCCESS") {
+                            alert("Lead submitted successfully!");
                         } else {
-                            alert("Failed: " + JSON.stringify(data));
+                            alert("API failed: " + text);
                         }
                     } catch {
-                        alert("Invalid JSON from PHP: " + text);
+                        alert("Invalid JSON response");
                     }
                 })
-                .catch(err => {
-                    console.error("FETCH ERROR:", err);
-                    alert("Fetch failed: " + err.message);
+                .catch(error => {
+                    console.error("FETCH ERROR:", error);
+                    alert("API Error: " + error.message);
                 });
         });
     </script>
