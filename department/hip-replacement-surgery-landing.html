@@ -1013,6 +1013,11 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
             margin-top: 40px;
+            place-items: center;
+        }
+
+        .package-grid>div:only-child {
+            grid-column: 2 / 3;
         }
 
         .package-card {
@@ -1796,10 +1801,50 @@
             }
         }
     </style>
+
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WGJFVPCB');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1282482353417147');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1282482353417147&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
 <body>
 
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGJFVPCB" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1282482353417147&ev=PageView&noscript=1" /></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- 1. STICKY TOP BAR -->
     <div class="top-bar">
         <div class="container">
@@ -2052,23 +2097,30 @@
                         alt="Dr. Kushal Lakshmana" class="doctor-img">
                     <div class="doctor-info">
                         <h4>Dr. Kushal Lakshmana</h4>
-                        <p>Consultant &amp; HOD — Orthopaedics</p><small>MS Orthopaedics · Fellowship in Arthroplasty
-                            (Fortis)</small>
+                        <p>Consultant &amp; HOD — Orthopaedics</p>
+                        <small>MS Orthopaedics </small>
+                        <small>Fellowship in Arthroplasty</small>
+                        <small>Knee & Hip Replacement Specialist</small>
                     </div>
                 </div>
                 <div class="doctor-card"><img src="https://aarogyahastha.com/static/img/doctors/karan-gowda.jpg"
                         alt="Dr. C L Karan Gowda" class="doctor-img">
                     <div class="doctor-info">
                         <h4>Dr. C L Karan Gowda</h4>
-                        <p>Consultant — Orthopaedics</p><small>MS Orthopaedics · Complex Trauma &amp;
-                            Arthroscopy</small>
+                        <p>Consultant &amp; HOD — Orthopaedics</p>
+                        <small>MS Orthopaedics </small>
+                        <small>Fellowship in Arthroplasty</small>
+                        <small>Knee & Hip Replacement Specialist</small>
                     </div>
                 </div>
                 <div class="doctor-card"><img src="https://aarogyahastha.com/static/img/doctors/dr-he.jpg"
                         alt="Dr. Radhesh Menon" class="doctor-img">
                     <div class="doctor-info">
                         <h4>Dr. Radhesh R Menon</h4>
-                        <p>Consultant — Orthopaedics</p><small>MS Orthopaedics (Gold Medal)</small>
+                        <p>Consultant &amp; HOD — Orthopaedics</p>
+                        <small>MS Orthopaedics </small>
+                        <small>Fellowship in Arthroplasty</small>
+                        <small>Knee & Hip Replacement Specialist</small>
                     </div>
                 </div>
             </div>
@@ -2169,7 +2221,7 @@
     <section class="mid-cta">
         <div class="container">
             <h2>Still Thinking? Let's Talk.</h2>
-            <p>A 10-minute call with our orthopaedic specialist can give you the clarity you need. No pressure, no
+            <p>Consultation with our orthopaedic specialist can give you the clarity you need. No pressure, no
                 obligation.
             </p>
             <div class="mid-cta-buttons">
@@ -2201,8 +2253,6 @@
                     <span class="package-tag">Most Popular</span>
                     <div class="package-header">
                         <h4>Total Hip Replacement</h4>
-                        <p class="package-desc">Complete hip replacement for severe arthritis — emergency &amp; planned
-                        </p>
                         <div class="package-price">1,50,000 *<br><small><b>Inclusive:</b> Surgery Charges + Bed Charges
                                 + Pro Op Test Minimal Invesitgation </small></div>
                     </div>
@@ -2426,7 +2476,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- 12. FAQ -->
     <section class="faq-section" id="faq">
         <div class="container">
