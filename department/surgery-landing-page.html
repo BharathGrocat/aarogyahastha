@@ -1096,7 +1096,7 @@
 
     .packages-grid {
       display: grid;
-          grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 1.2rem;
       max-width: 960px;
       margin: 0 auto
@@ -1534,6 +1534,213 @@
       height: 16px
     }
 
+
+    .ins-wrap {
+      padding: 2.5rem 1.5rem;
+      background: linear-gradient(145deg, #071a2e 0%, #0d2b47 60%, #0a2238 100%);
+      border-radius: var(--border-radius-lg);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .blob1 {
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: rgba(55, 138, 221, 0.07);
+      pointer-events: none;
+    }
+
+    .logo-box img {
+      width: 100%;
+    }
+
+    .blob2 {
+      position: absolute;
+      bottom: -60px;
+      left: -60px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: rgba(29, 158, 117, 0.07);
+      pointer-events: none;
+    }
+
+    .ins-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(55, 138, 221, 0.12);
+      border: 1px solid rgba(55, 138, 221, 0.3);
+      color: #85b7eb;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+    }
+
+    .ins-pill-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #1d9e75;
+    }
+
+    .ins-h {
+      font-size: 21px;
+      font-weight: 500;
+      color: #fff;
+      margin: 0 0 0.3rem;
+    }
+
+    .ins-sub {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.42);
+      margin: 0 0 2rem;
+    }
+
+    .ins-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 0 auto 12px;
+    }
+
+    .ins-card {
+      background: rgba(255, 255, 255, 0.055);
+      border: 0.5px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 16px 10px 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.2s, border-color 0.2s, transform 0.18s;
+      cursor: default;
+      justify-content: center;
+    }
+
+    .ins-card:hover {
+      background: rgba(255, 255, 255, 0.09);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-3px);
+    }
+
+    .logo-box {
+      width: 100px;
+      border-radius: 7px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+    }
+
+    .ins-name {
+      font-size: 11px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.78);
+      text-align: center;
+      line-height: 1.35;
+    }
+
+    .ins-tag {
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.32);
+      text-align: center;
+    }
+
+    .ins-tag.health {
+      color: #5dcaa5;
+    }
+
+    .ins-tag.general {
+      color: #85b7eb;
+    }
+
+    .ins-tag.life {
+      color: #f0997b;
+    }
+
+    .more-card {
+      background: rgba(55, 138, 221, 0.1);
+      border: 0.5px solid rgba(55, 138, 221, 0.25);
+      border-radius: 12px;
+      padding: 16px 10px 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.18s;
+    }
+
+    .more-card:hover {
+      background: rgba(55, 138, 221, 0.18);
+      transform: translateY(-3px);
+    }
+
+    .more-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(55, 138, 221, 0.18);
+      border: 1px solid rgba(55, 138, 221, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 300;
+      color: #85b7eb;
+      line-height: 1;
+      padding-bottom: 7px;
+    }
+
+    .more-label {
+      font-size: 12px;
+      font-weight: 500;
+      color: #85b7eb;
+    }
+
+    .more-sub {
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    .ins-stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .ins-stat-num {
+      font-size: 16px;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .ins-stat-lbl {
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.35);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .ins-divider {
+      width: 1px;
+      height: 28px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
     @media(max-width:990px) {
       .top-bar {
         display: block;
@@ -1633,6 +1840,14 @@
 
       .doc-card {
         width: 47%;
+      }
+
+      .ins-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .more-card {
+        padding: 30px 20px;
       }
     }
 
@@ -2217,7 +2432,8 @@
       <p class="section-sub reveal">Transparent pricing. No hidden charges. Choose a department below to view detailed
         packages, doctor profiles, and book a consultation.</p>
       <div class="packages-grid">
-        <a href="https://bharathgrocat.github.io/aarogyahastha/department/knee-replacement-landing.html" class="pkg-card reveal" target="_blank">
+        <a href="https://bharathgrocat.github.io/aarogyahastha/department/knee-replacement-landing.html"
+          class="pkg-card reveal" target="_blank">
           <div class="pkg-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
               <circle cx="12" cy="12" r="10" />
               <path d="M12 8v4l2 2" />
@@ -2230,7 +2446,8 @@
               <polyline points="12 5 19 12 12 19" />
             </svg></span>
         </a>
-        <a href="https://bharathgrocat.github.io/aarogyahastha/department/general-laparoscopic-surgery-landing.html" class="pkg-card reveal" target="_blank">
+        <a href="https://bharathgrocat.github.io/aarogyahastha/department/general-laparoscopic-surgery-landing.html"
+          class="pkg-card reveal" target="_blank">
           <div class="pkg-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
             </svg></div>
@@ -2242,7 +2459,8 @@
               <polyline points="12 5 19 12 12 19" />
             </svg></span>
         </a>
-        <a href="https://bharathgrocat.github.io/aarogyahastha/department/hip-replacement-surgery-landing.html" class="pkg-card reveal" target="_blank">
+        <a href="https://bharathgrocat.github.io/aarogyahastha/department/hip-replacement-surgery-landing.html"
+          class="pkg-card reveal" target="_blank">
           <div class="pkg-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
               <path d="M18 20V10" />
               <path d="M12 20V4" />
@@ -2270,7 +2488,8 @@
               <polyline points="12 5 19 12 12 19" />
             </svg></span>
         </a> -->
-        <a href="https://bharathgrocat.github.io/aarogyahastha/department/maternity-packages-landing.html" class="pkg-card reveal" target="_blank">
+        <a href="https://bharathgrocat.github.io/aarogyahastha/department/maternity-packages-landing.html"
+          class="pkg-card reveal" target="_blank">
           <div class="pkg-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
               <path
                 d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
@@ -2287,7 +2506,110 @@
       </div>
     </div>
   </section>
+  <section class="ins-wrap">
+    <div class="blob1"></div>
+    <div class="blob2"></div>
+    <div class="section-inner">
+      <div class="ins-pill"><span class="ins-pill-dot"></span>Cashless Insurance Partners</div>
+      <h2 class="ins-h">Empanelled With Major Insurance Providers</h2>
+      <p class="ins-sub">Direct cashless settlement — no paperwork, no hassle</p>
 
+      <div class="ins-grid">
+
+        <!-- Star Health -->
+        <div class="ins-card">
+          <div class="logo-box">
+            <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo1.png" alt="">
+          </div>
+          <!-- <div class="ins-name">Star Health</div> -->
+        </div>
+
+        <!-- HDFC ERGO -->
+        <div class="ins-card">
+          <div class="logo-box">
+            <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo2.png" alt="">
+          </div>
+          <!-- <div class="ins-name">Niva Bupa</div> -->
+        </div>
+
+        <!-- Bajaj Allianz -->
+        <div class="ins-card">
+          <div class="logo-box">
+            <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo4.png" alt="">
+          </div>
+          <!-- <div class="ins-name">Bajaj Allianz</div> -->
+        </div>
+
+        <!-- New India Assurance -->
+        <div class="ins-card">
+          <div class="logo-box">
+            <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo5.png" alt="">
+          </div>
+          <!-- <div class="ins-name">ICICI Lombard</div> -->
+        </div>
+
+      </div>
+
+      <div class="ins-grid">
+
+
+        <!-- Niva Bupa -->
+        <div class="ins-card">
+          <div class="logo-box">
+            <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo6.png" alt="">
+          </div>
+          <!-- <div class="ins-name">HDFC ERGO</div> -->
+        </div>
+
+        <div class="ins-card">
+          <div class="logo-box">
+            <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo7.png" alt="">
+          </div>
+          <!-- <div class="ins-name">Care Health</div> -->
+        </div>
+
+        <div class="ins-card">
+          <div class="logo-box">
+            <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo8.png" alt="">
+          </div>
+          <!-- <div class="ins-name">Care Health</div> -->
+        </div>
+
+
+
+        <div class="ins-card">
+          <div class="logo-box">
+            <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo9.png" alt="">
+          </div>
+          <!-- <div class="ins-name">Care Health</div> -->
+        </div>
+
+
+        <div class="ins-card">
+          <div class="logo-box">
+            <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo10.png" alt="">
+          </div>
+          <!-- <div class="ins-name">Care Health</div> -->
+        </div>
+
+        <div class="ins-card">
+          <div class="logo-box">
+            <img src="https://bharathgrocat.github.io/aarogyahastha/department/image/Insurance_logo11.png" alt="">
+          </div>
+          <!-- <div class="ins-name">Care Health</div> -->
+        </div>
+        <!-- Care Health (formerly Religare) -->
+
+        <!-- More card -->
+        <div class="more-card"
+          onclick="window.sendPrompt && sendPrompt('Show me all available cashless insurance partners')">
+
+          <div class="more-label">+ More</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
   <!-- ===== FAQ ===== -->
   <section class="section" id="faq-section">
     <div class="section-inner">
