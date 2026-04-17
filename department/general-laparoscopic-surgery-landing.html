@@ -687,9 +687,14 @@
             margin-top: 4px
         }
 
-        .why-card-visual .emoji {
-            font-size: 2rem;
-            margin-bottom: 8px
+        .why-card-visual .emoji img {
+            width: 50px;
+            height: 50px;
+            margin: auto;
+            margin-bottom: 8px;
+            background: #fff;
+            border-radius: 10px;
+            padding: 7px;
         }
 
         /* DOCTORS */
@@ -698,9 +703,9 @@
         }
 
         .doctor-cards {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px
+           display: flex;
+            gap: 20px;
+            justify-content: center;
         }
 
         .doctor-card {
@@ -709,7 +714,9 @@
             overflow: hidden;
             border: 1px solid var(--border);
             text-align: center;
-            transition: all .3s
+            transition: all .3s;
+            width: 30%;
+            
         }
 
         .doctor-card:hover {
@@ -723,21 +730,6 @@
             object-fit: cover;
             object-position: top;
             background: var(--navy-pale)
-        }
-
-        /* 1 item */
-        .doctor-cards>div:only-child {
-            grid-column: 2 / 4;
-            justify-self: center;
-        }
-
-        /* 2 items */
-        .doctor-cards>div:nth-child(1):nth-last-child(2) {
-            grid-column: 2 / 3;
-        }
-
-        .doctor-cards>div:nth-child(2):last-child {
-            grid-column: 3 / 4;
         }
 
         .doctor-info {
@@ -758,7 +750,9 @@
 
         .doctor-info small {
             font-size: .72rem;
-            color: var(--muted)
+            color: var(--muted);
+            display: flex;
+            justify-content: center;
         }
 
         /* PROCESS */
@@ -1514,9 +1508,6 @@
                 grid-template-columns: 1fr 1fr
             }
 
-            .doctor-cards {
-                grid-template-columns: repeat(2, 1fr)
-            }
 
             .process-steps {
                 grid-template-columns: repeat(3, 1fr)
@@ -1584,13 +1575,6 @@
                 font-size: .75rem
             }
 
-            .doctor-cards {
-                grid-template-columns: 1fr;
-                max-width: 300px;
-                margin-left: auto;
-                margin-right: auto
-            }
-
             .why-grid {
                 grid-template-columns: 1fr 1fr
             }
@@ -1631,6 +1615,14 @@
         @media(max-width:500px) {
             .why-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .doctor-card{
+                width: 100%;
+            }
+
+            .doctor-cards {
+                flex-wrap: wrap;
             }
         }
     </style>
@@ -1758,7 +1750,7 @@
             <div class="hero-form-card">
                 <div class="form-urgency">🔥 Same-Week Surgery Slots Available — Book Now</div>
                 <h3>Book Your Free Consultation</h3>
-                <p class="form-sub">Our surgeon will call you within 30 minutes to discuss your condition.</p>
+                <p class="form-sub">Our SPOC will call you within 20 minutes to discuss your condition.</p>
                 <form onsubmit="return false;">
                     <div class="form-group"><label>Full Name</label><input type="text" placeholder="Enter your name"
                             required>
@@ -1770,11 +1762,10 @@
                         <select>
                             <option value="">Select...</option>
                             <option>Gallbladder / Gallstones</option>
-                            <option>Hernia (Inguinal / Umbilical / Incisional)</option>
+                            <option>Hernia (Inguinal / Umbilical / Incisional / Ventral / Hiatal )</option>
                             <option>Appendicitis / Appendix</option>
                             <option>Piles / Fissure / Fistula</option>
                             <option>Thyroid Surgery</option>
-                            <option>Breast Lump / Surgery</option>
                             <option>Other / Not Sure — Need Consultation</option>
                         </select>
                     </div>
@@ -1834,7 +1825,7 @@
             <div class="proc-grid">
                 <div class="proc-card"><span class="proc-tag">Most Common</span>
                     <div class="proc-card-icon"><img
-                            src="https://bharathgrocat.github.io/aarogyahastha/department/image/cholecystectomy.png"
+                            src="https://bharathgrocat.github.io/aarogyahastha/department/image/general-surgery1.png"
                             alt=""></div>
                     <h4>Gallbladder Removal (Cholecystectomy)</h4>
                     <p>Laparoscopic removal of gallbladder for gallstones. 3 tiny keyhole incision, same-day or next-day
@@ -1843,16 +1834,19 @@
                 </div>
                 <div class="proc-card">
                     <div class="proc-card-icon"><img
-                            src="https://bharathgrocat.github.io/aarogyahastha/department/image/disease.png" alt="">
+                            src="https://bharathgrocat.github.io/aarogyahastha/department/image/general-surgery2.png"
+                            alt="">
                     </div>
                     <h4>Hernia Repair (Lap / Open)</h4>
-                    <p>Inguinal, umbilical, incisional and hiatal hernia repair using mesh reinforcement. Laparoscopic
+                    <p>Inguinal, umbilical, incisional, Ventral and hiatal hernia repair using mesh reinforcement.
+                        Laparoscopic
                         option for
                         faster recovery.</p>
                 </div>
                 <div class="proc-card">
                     <div class="proc-card-icon"><img
-                            src="https://bharathgrocat.github.io/aarogyahastha/department/image/appendix.png" alt="">
+                            src="https://bharathgrocat.github.io/aarogyahastha/department/image/general-surgery3.png"
+                            alt="">
                     </div>
                     <h4>Appendix Removal (Appendectomy)</h4>
                     <p>Emergency and elective laparoscopic appendectomy. Minimal pain, small incisions, back to work in
@@ -1861,7 +1855,8 @@
                 </div>
                 <div class="proc-card">
                     <div class="proc-card-icon"><img
-                            src="https://bharathgrocat.github.io/aarogyahastha/department/image/chair.png" alt=""></div>
+                            src="https://bharathgrocat.github.io/aarogyahastha/department/image/general-surgery4.png"
+                            alt=""></div>
                     <h4>Piles, Fissure &amp; Fistula</h4>
                     <p>Laser and minimally invasive procedures for haemorrhoids, fissures, and fistula. Reduced pain,
                         faster
@@ -1869,7 +1864,7 @@
                 </div>
                 <div class="proc-card">
                     <div class="proc-card-icon"><img
-                            src="https://bharathgrocat.github.io/aarogyahastha/department/image/thyroid-gland.png"
+                            src="https://bharathgrocat.github.io/aarogyahastha/department/image/general-surgery5.png"
                             alt=""></div>
                     <h4>Thyroid Surgery (Thyroidectomy)</h4>
                     <p>Safe removal of thyroid gland for nodules, goitre, or cancer. Expert endocrine surgeons with
@@ -1889,22 +1884,30 @@
                 approach.</p>
             <div class="why-grid">
                 <div class="why-card-visual">
-                    <div class="emoji">🩹</div>
+                    <div class="emoji"><img
+                            src="https://bharathgrocat.github.io/aarogyahastha/department/image/general-approach1.png"
+                            alt=""></div>
                     <h4>Smaller Incisions</h4>
                     <p>3-4 tiny cuts (5-10mm) vs one large cut (15-20cm)</p>
                 </div>
                 <div class="why-card-visual">
-                    <div class="emoji">😌</div>
+                    <div class="emoji"><img
+                            src="https://bharathgrocat.github.io/aarogyahastha/department/image/general-approach2.png"
+                            alt=""></div>
                     <h4>Less Pain</h4>
                     <p>Significantly less post-operative pain and discomfort</p>
                 </div>
                 <div class="why-card-visual">
-                    <div class="emoji">🏠</div>
+                    <div class="emoji"><img
+                            src="https://bharathgrocat.github.io/aarogyahastha/department/image/general-approach3.png"
+                            alt=""></div>
                     <h4>Faster Discharge</h4>
                     <p>Faster discharge than open surgery, shorter hospital stay</p>
                 </div>
                 <div class="why-card-visual">
-                    <div class="emoji">🏃</div>
+                    <div class="emoji"><img
+                            src="https://bharathgrocat.github.io/aarogyahastha/department/image/general-approach4.png"
+                            alt=""></div>
                     <h4>Quick Recovery</h4>
                     <p>Back to normal activities in 1-2 weeks vs 4-6 weeks</p>
                 </div>
@@ -1915,8 +1918,8 @@
     <!-- 6. DOCTORS -->
     <section class="doctors-section" id="doctors">
         <div class="container">
-            <p class="section-label text-center">Your Surgical Team</p>
-            <h2 class="section-title text-center">Meet Your Surgeons</h2>
+            <p class="section-label text-center">our Surgical Team</p>
+            <h2 class="section-title text-center">Meet Our Surgeons</h2>
             <p class="section-desc text-center mx-auto">Experienced general and laparoscopic surgeons trusted by
                 thousands of
                 families across Bangalore.</p>
@@ -1925,9 +1928,8 @@
                         alt="Dr. V Devendran" class="doctor-img">
                     <div class="doctor-info">
                         <h4>Dr. V Devendran</h4>
-                        <p>Senior Consultant — General, Laparoscopic &amp; Laser Surgery, Proctology</p>
-                        <small>Specialist in
-                            minimally invasive surgery &amp; advanced proctology</small>
+                        <p>MBBS, DNB - General Surgery</p>
+                        <small>Senior Consultant — General, Laparoscopic &amp; Laser Surgery, Proctology</small>
                     </div>
                 </div>
                 <div class="doctor-card"><img
@@ -1935,8 +1937,8 @@
                         alt="Dr. Niranjan S Kadlur" class="doctor-img">
                     <div class="doctor-info">
                         <h4>Dr. Niranjan S Kadlur</h4>
-                        <p>Consultant — General Surgery</p><small>General &amp; minimally invasive surgical
-                            specialist</small>
+                        <p>MBBS, DNB (General Surgery), FAMS</p>
+                        <small>Consultant - General Surgery</small>
                     </div>
                 </div>
             </div>
@@ -2067,7 +2069,7 @@
                         <h4>Appendicectomy (laparoscopic)</h4>
                         <!-- <p class="package-desc">Gallbladder removal — keyhole surgery</p> -->
                         <div class="package-price">₹75,000*<br><small><b>Inclusive:</b> Surgery Charges + Bed Charges +
-                                Pre Op Test Minimal Invesitgation </small></div>
+                                Pre Op Invesitgations </small></div>
                     </div>
                     <div class="package-body">
                         <ul class="package-features">
@@ -2095,7 +2097,7 @@
                         <h4>Fissurectomy / Hemorrhoidectomy</h4>
                         <!-- <p class="package-desc">Inguinal / umbilical / incisional hernia</p> -->
                         <div class="package-price">₹50,000*<br><small><b>Inclusive:</b> Surgery Charges + Bed Charges +
-                                Pre Op Test Minimal Invesitgation </small></div>
+                                Pre Op Invesitgations </small></div>
                     </div>
                     <div class="package-body">
                         <ul class="package-features">
@@ -2125,7 +2127,7 @@
                         <h4>Fistulectomy</h4>
                         <!-- <p class="package-desc">Appendix removal — emergency or planned</p> -->
                         <div class="package-price">₹50,000*<br><small><b>Inclusive:</b> Surgery Charges + Bed Charges +
-                                Pre Op Test Minimal Invesitgation </small></div>
+                                Pre Op Invesitgations </small></div>
                     </div>
                     <div class="package-body">
                         <ul class="package-features">
@@ -2150,7 +2152,7 @@
                     <div class="package-header">
                         <h4>Umbilical Hernia </h4>
                         <div class="package-price">₹75,000*<br><small><b>Inclusive:</b> Surgery Charges + Bed Charges +
-                                Pre Op Test Minimal Invesitgation </small></div>
+                                Pre Op Invesitgations </small></div>
                     </div>
                     <div class="package-body">
                         <ul class="package-features">
@@ -2175,7 +2177,7 @@
                     <div class="package-header">
                         <h4>Inguinal Hernia</h4>
                         <div class="package-price">₹80,000*<br><small><b>Inclusive:</b> Surgery Charges + Bed Charges +
-                                Pre Op Test Minimal Invesitgation </small></div>
+                                Pre Op Invesitgations </small></div>
                     </div>
                     <div class="package-body">
                         <ul class="package-features">
@@ -2200,7 +2202,7 @@
                     <div class="package-header">
                         <h4>Laparoscopic Cholecystectomy</h4>
                         <div class="package-price">₹75,000*<br><small><b>Inclusive:</b> Surgery Charges + Bed Charges +
-                                Pre Op Test Minimal Invesitgation </small></div>
+                                Pre Op Invesitgations </small></div>
                     </div>
                     <div class="package-body">
                         <ul class="package-features">
@@ -2222,8 +2224,8 @@
                     </div>
                 </div>
             </div>
-            <div class="package-note"><strong>💡 Exclusive:</strong> Drugs Consumables + Implant + Higherend
-                investigations + Blood Components </div>
+            <div class="package-note"><strong>💡 Exclusive:</strong> Drugs + Consumables + Implant + Highend
+                investigations + Blood Components + Mesh</div>
         </div>
     </section>
 
